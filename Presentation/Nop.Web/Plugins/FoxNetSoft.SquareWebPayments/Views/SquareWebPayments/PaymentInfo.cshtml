@@ -1,0 +1,445 @@
+﻿@model FoxNetSoft.Plugin.Payments.SquareWebPayments.Models.PaymentInfoModel
+@using FoxNetSoft.Plugin.Payments.SquareWebPayments.Extensions
+@{
+    Layout = "";
+}
+<div id="square-payment-was-sent" style="display:none;">
+    @T("FoxNetSoft.Plugin.Payments.SquareWebPayments.PaymentWasSent")
+</div>
+<div class="section" id="square-payment-form">
+    <input type="hidden" asp-for="SquarePaymentToken">
+    <input type="hidden" asp-for="SquareBuyerVerificationToken">
+    <input type="hidden" asp-for="SquareErrors">
+    @if (Model.EnableApplePay)
+    {
+        <div id="apple-pay-button"></div>
+    }
+    @if (Model.EnableGooglePay)
+    {
+        <div id="square-google-pay-button"></div>
+    }
+    @if (Model.EnableAfterpay)
+    {
+        <div id="square-afterpay-button"></div>
+    }
+    @if (Model.EnableACHBankTransfer)
+    {
+        <fieldset class="buyer-inputs">
+            <input type="text"
+                   id="square-ach-given-name"
+                   autocomplete="given-name"
+                   aria-required="true"
+                   aria-label="First Name"
+                   required="required"
+                   placeholder="Given Name"
+                   name="givenName"
+                   value="@Model.BillingAddress?.FirstName"
+                   spellcheck="false" />
+
+            <input type="text"
+                   id="square-ach-family-name"
+                   autocomplete="family-name"
+                   aria-required="true"
+                   aria-label="Last Name"
+                   required="required"
+                   placeholder="Family Name"
+                   value="@Model.BillingAddress?.LastName"
+                   name="familyName"
+                   spellcheck="false" />
+        </fieldset>
+        <div class="buttons">
+            <button id="square-ach-button" class="button-1 checkout-button">Pay with Bank Account</button>
+        </div>
+    }
+    <div id="square-card-container"></div>
+    <div id="square-card-errors" role="alert"></div>
+</div>
+<div class="section square-payment-ajax-loading-block" style="display: none">
+    <div class="square-loading-image">
+        <img alt="" src="/Plugins/FoxNetSoft.SquareWebPayments/Styles/ajax_loader_large.gif">
+    </div>
+</div>
+<script>
+    if (typeof scriptpaypalpro === 'undefined') {
+        var scriptpaypalpro;
+    }
+    var hasquaredirectcardpaymentconfirm = false;
+    var squaredirectcardtoken = "";
+
+    function buildSquarePaymentRequest(payments, isafterpay) {
+        const req = payments.paymentRequest({
+            countryCode: '@Model.CountryCode',
+            currencyCode: '@Model.CurrencyCode',
+            total: {
+                amount: '@Model.OrderTotal.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)',
+                label: 'Total',
+            },
+            requestBillingContact: false,
+            requestShippingContact: true,
+                        shippingContact: {
+                            familyName: '@Model.LastName',
+                            givenName: '@Model.FirstName',
+                            email: '@Model.Email',
+                            countryCode: '@Model.Country',
+                            state: '@Model.StateProvince',
+                            city: '@Model.City',
+                            addressLines: [
+                                '@Model.Address1','@Model.Address2'
+                            ],
+                            postalCode: '@Model.ZipPostalCode',
+                            phone: '@Model.PhoneNumber'
+                        },
+        });
+        if (isafterpay) {
+            // Note how afterpay has its own listeners
+            req.addEventListener('afterpay_shippingaddresschanged', function (_address) {
+                return {
+                    shippingOptions: [
+                        {
+                            amount: '@Model.ShippingAmount.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)',
+                            id: 'shipping-option-1',
+                            label: '@Model.ShippingMethod',
+                            total: {
+                                amount: '@Model.OrderTotal.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)',
+                                label: 'Total',
+                            }
+                        }
+                    ],
+                };
+            });
+
+            req.addEventListener('afterpay_shippingoptionchanged', function (_option) {
+                // This event listener is for information purposes only.
+                // Changes here (or values returned) will not affect the Afterpay/Clearpay PaymentRequest.
+            });
+        }
+
+        return req;
+    }
+
+    // This function tokenizes a payment method.
+    // The ‘error’ thrown from this async function denotes a failed tokenization,
+    // which is due to buyer error (such as an expired card). It is up to the
+    // developer to handle the error and provide the buyer the chance to fix
+    // their mistakes.
+    async function tokenizeSquare(paymentMethod) {
+        var tokenResult;
+        if (paymentMethod.methodType == "ACH") {
+            const achOptions = { accountHolderName: $("#square-ach-given-name").val() + ' ' + $("#square-ach-family-name").val() };
+            // ACH with the `accountHolderName` as an option.
+            tokenResult = await paymentMethod.tokenize(achOptions);
+        }
+        else {
+            tokenResult = await paymentMethod.tokenize();
+        }
+
+        if (tokenResult.status === 'OK') {
+            return tokenResult.token;
+        } else {
+            let errorMessage = `Tokenization failed-status: ${tokenResult.status}`;
+            if (tokenResult.errors) {
+                errorMessage += ` and errors: ${JSON.stringify(
+                    tokenResult.errors
+                )}`;
+            }
+            throw new Error(errorMessage);
+        }
+    }
+
+    async function verifySquareBuyer(payments, token, shouldVerify) {
+        if (!shouldVerify)
+            return "";
+        //Initiate SCA flow + 3D secure
+        const verificationDetails = {
+                amount: '@Model.OrderTotal.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)',
+                currencyCode: "@Model.CurrencyCode",
+                intent: "CHARGE",  //Allowed values: "CHARGE", "STORE"
+                billingContact: {
+                    familyName: "@Model.BillingAddress?.FirstName.FixIllegalJavaScriptChars()",
+                    givenName: "@Model.BillingAddress?.LastName.FixIllegalJavaScriptChars()",
+                    email: "@Model.BillingAddress?.Email.FixIllegalJavaScriptChars()",
+                    country: "@Model.BillingCountry?.TwoLetterIsoCode.FixIllegalJavaScriptChars()",
+                    city: "@Model.BillingAddress?.City.FixIllegalJavaScriptChars()",
+                    addressLines: ["@Model.BillingAddress?.Address1.FixIllegalJavaScriptChars()", "@Model.BillingAddress?.Address2.FixIllegalJavaScriptChars()"],
+                    postalCode : "@Model.BillingAddress?.ZipPostalCode.FixIllegalJavaScriptChars()",
+                    phone: "@Model.BillingAddress?.PhoneNumber.FixIllegalJavaScriptChars()"
+                    }
+        };
+
+        const verificationResults = await payments.verifyBuyer(
+            token,
+            verificationDetails
+        );
+        return verificationResults.token;
+    }
+
+    async function handlePaymentMethodSubmission(payments, event, paymentMethod, shouldVerify) {
+        //event.stopPropagation();
+        if ($('#square-payment-form').length === 0) {
+            if (typeof scriptpaypalpro !== 'undefined' && scriptpaypalpro.length !== 0) {
+                eval(scriptpaypalpro);
+            }
+            return true;
+        }
+        if (hasquaredirectcardpaymentconfirm) {
+            return true;
+        }
+        event.preventDefault();
+
+        $("body").append('<div id="foxnetsoftsqaureoverlay" style="background-color:grey;position:fixed;top:0;left:0;height:100%;width:100%;z-index:999"><div class="square-loading-image"><img alt="" src="/Plugins/FoxNetSoft.SquareWebPayments/Styles/ajax_loader_large.gif"></div></div>');
+
+        var checkoutform = "";
+        if ($("#form-fns-simplecheckout").length == 1)
+            checkoutform = "#form-fns-simplecheckout";
+        else if ($("#checkoutForm").length == 1)
+            checkoutform = "#checkoutForm";
+        if (checkoutform != "") {
+            //validation of the form
+            if (!$(checkoutform).valid()) {
+                $("#foxnetsoftsqaureoverlay").remove();
+                return false;
+            }
+        }
+
+        //terms of service
+        var termOfServiceOk = true;
+        var termsofservice = $('#termsofservice');
+        if ($('#termsofservice').length === 0)
+            termsofservice = $('#terms-of-service');
+        if (termsofservice.length > 0 && !termsofservice.is(":hidden")) {
+            //terms of service element exists
+            if (!termsofservice.is(':checked')) {
+                var readterms = $("#terms-of-service-warning-box");
+                if (readterms.length === 0)
+                    readterms = $('#read-terms');
+                readterms.dialog();
+                termOfServiceOk = false;
+            } else {
+                termOfServiceOk = true;
+            }
+        }
+        if (!termOfServiceOk) {
+            $("#foxnetsoftsqaureoverlay").remove();
+            return false;
+        }
+
+        tokenizeSquare(paymentMethod)
+            .then((token) =>
+            {
+                document.getElementById("square-card-errors").innerHTML = "";
+                document.getElementById("SquareErrors").innerHTML = "";
+
+                document.getElementById('SquarePaymentToken').value = token;
+
+                //Set verification token value in nonce-form
+                verifySquareBuyer(payments, token, shouldVerify).then((verificationToken) =>
+                {
+                    document.getElementById('SquareBuyerVerificationToken').value = verificationToken;
+                    // POST the nonce form to the payment processing page
+                    $("#square-payment-form").hide();
+                    $("#square-payment-was-sent").show();
+                    $("#foxnetsoftsqaureoverlay").remove();
+                    hasquaredirectcardpaymentconfirm = true;
+
+                    if (typeof scriptpaypalpro !== 'undefined' && scriptpaypalpro.length !== 0) {
+                        eval(scriptpaypalpro);
+                        return;
+                    }
+                    @if (Model.OnePageCheckoutPlugin)
+                    {
+                    <text>
+                            $('.confirm-order-button').click();
+                            $("#checkoutForm").find("button[data-complete]").click();
+                    </text>
+                    }
+                    else
+                    {
+                        <text>
+                            $('.payment-info-next-step-button').click();
+                            $('.confirm-order-next-step-button').click();
+                        </text>
+                    }
+                }).catch((e) => {
+                    SquareErrorMessage(e.message);
+                    event.preventDefault();
+                });
+            }).catch((e) =>
+            {
+                SquareErrorMessage(e.message);
+                event.preventDefault();
+            });
+        return false;
+    }
+    function SquareErrorMessage(message) {
+        if (message.indexOf('[{') !== -1) {
+            try {
+                var errmessages = [];
+                var errors = JSON.parse(message.substring(message.indexOf('[{')));
+                for (var error of errors) {
+                    errmessages.push(error.message);
+                }
+                message = errmessages.join(', ');
+            }
+            catch {
+            }
+        }
+        document.getElementById("square-card-errors").innerHTML = message;
+        document.getElementById("SquareErrors").innerHTML = message;
+        //$('.square-payment-ajax-loading-block').hide();
+        $("#foxnetsoftsqaureoverlay").remove();
+        console.error(message);
+    }
+
+    async function initializeSquareCard(payments) {
+        const card = await payments.card();
+        await card.attach('#square-card-container');
+        return card;
+    }
+    async function initializeSquareGooglePay(payments, paymentRequest) {
+        const googlePay = await payments.googlePay(paymentRequest);
+        await googlePay.attach('#square-google-pay-button');
+        return googlePay;
+    }
+    async function initializeSquareApplePay(payments, paymentRequest) {
+        const applePay = await payments.applePay(paymentRequest);
+        // Note: You do not need to `attach` applePay.
+        return applePay;
+    }
+    async function initializeSquareAfterpay(payments, paymentRequest) {
+        const afterpay = await payments.afterpayClearpay(paymentRequest);
+        await afterpay.attach('#square-afterpay-button');
+        return afterpay;
+    }
+    async function initializeSquareACH(payments) {
+        const ach = await payments.ach(
+            {
+                redirectURI: window.location.href,
+                transactionId: 'my-distinct-transaction-id',
+            });
+        return ach;
+    }
+    async function squareDirectInit() {
+        if (!window.Square) {
+            throw new Error('Square.js failed to load properly');
+        }
+        if (typeof scriptpaypalpro === 'undefined') {
+            scriptpaypalpro = $('.payment-info-next-step-button').attr("onclick");
+        }
+        /*if (squaredirectcardtoken.length > 0)
+            {
+                $('#SquareBuyerVerificationToken').val(squaredirectcardtoken);
+                $("#square-payment-form").hide();
+                $("#square-payment-was-sent").show();
+                $('.payment-info-next-step-button, .confirm-order-button').show();
+                $("#checkoutForm").find("button[data-complete]").show();
+                return;
+            }
+        */
+        $('.square-payment-ajax-loading-block').show();
+        const payments = window.Square.payments('@Model.ApplicationID', '@Model.LocationId');
+        const paymentRequest = buildSquarePaymentRequest(payments, @(Model.EnableAfterpay.ToString().ToLower()));
+
+        initializeSquareCard(payments).then((card) => {
+            @if (Model.OnePageCheckoutPlugin)
+            {
+                <text>
+                //$('#square-payment-pay-widget').hide();
+                $('.confirm-order-button').show().prop("onclick", null).unbind().click(async function (event) {
+                    await handlePaymentMethodSubmission(payments, event, card, true);
+                });
+                $("#checkoutForm").find("button[data-complete]").show().prop("onclick", null).unbind().click(async function (event) {
+                    await handlePaymentMethodSubmission(payments, event, card, true);
+                });
+                </text>
+            }
+            else
+            {
+                <text>
+                $('.payment-info-next-step-button').show().prop("onclick", null).unbind().click(async function (event) {
+                    await handlePaymentMethodSubmission(payments, event, card, true);
+                });
+                </text>
+            }
+            $('.square-payment-ajax-loading-block').hide();
+        }).catch((e) => {
+            alert('Initializing Card failed');
+            console.error('Initializing Card failed', e);
+            return;
+        });
+        @if (Model.EnableGooglePay)
+        {
+            <text>
+            if (!!(window.PaymentRequest)) {
+                initializeSquareGooglePay(payments, paymentRequest).then((googlePay) => {
+                    const googlePayButton = document.getElementById('square-google-pay-button');
+                    googlePayButton.addEventListener('click', async function (event) {
+                        await handlePaymentMethodSubmission(payments, event, googlePay, true);
+                    });
+                });
+                //.catch ((e) => console.error('Initializing Google Pay failed', e));
+            }
+            </text>
+        }
+        @if (Model.EnableApplePay)
+        {
+            <text>
+            if (window.ApplePaySession) {
+                initializeSquareApplePay(payments, paymentRequest).then((applePay) => {
+                    const applePayButton = document.getElementById('apple-pay-button');
+                    applePayButton.addEventListener('click', async function (event) {
+                        await handlePaymentMethodSubmission(payments, event, applePay, true);
+                    });
+                });
+                //.catch((e) => console.error('Initializing Apple Pay failed', e));
+            }
+            </text>
+        }
+        @if (Model.EnableAfterpay)
+        {
+            <text>
+            initializeSquareAfterpay(payments, paymentRequest).then((afterpay) => {
+                const afterpayButton = document.getElementById('square-afterpay-button');
+                afterpayButton.addEventListener('click', async function (event) {
+                    await handlePaymentMethodSubmission(payments, event, afterpay, false);
+                });
+            });
+            //.catch((e) => console.error('Initializing Afterpay/Clearpay failed', e));
+            </text>
+        }
+        @if (Model.EnableACHBankTransfer)
+        {
+            <text>
+            initializeSquareACH(payments).then((ach) => {
+                ach.addEventListener('ontokenization', async function (event) {
+                    const { tokenResult, error } = event.detail;
+                    if (error) {
+                        // add code here to handle error
+                    }
+                    else if (tokenResult.status == 'OK') {
+                        const paymentResults = await createPayment(token);
+                    }
+                });
+                const achButton = document.getElementById('square-ach-button');
+                achButton.addEventListener('click', async function (event) {
+                    await handlePaymentMethodSubmission(payments, event, ach, false);  // tokenize
+                });
+            });
+            //.catch((e) => console.error('Initializing ACH failed', e));
+            </text>
+        }
+
+        $(document).on('accordion_section_opened', function (data) {
+           if (data && (data.currentSectionId == 'opcpayment_methodbilling' || data.previousSectionId == 'opc-payment_info')) {
+                 $('.payment-info-next-step-button, .confirm-order-button').show();
+           }
+        });
+    }
+
+    async function deferjqueryloading(method) {
+        if (window.jQuery && typeof $ == 'function' && window.Square)
+            await method();
+        else
+            setTimeout(async function () { await deferjqueryloading(method) }, 50);
+    }
+    deferjqueryloading(squareDirectInit);
+</script>

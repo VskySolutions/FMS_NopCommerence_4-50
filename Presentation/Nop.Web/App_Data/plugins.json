@@ -1,0 +1,74 @@
+﻿{
+  "InstalledPluginNames": [
+    "Obsolete field, using only for compatibility"
+  ],
+  "InstalledPlugins": [
+    {
+      "SystemName": "DiscountRequirement.MustBeAssignedToCustomerRole",
+      "Version": "1.39"
+    },
+    {
+      "SystemName": "Pickup.PickupInStore",
+      "Version": "1.45"
+    },
+    {
+      "SystemName": "Shipping.FixedByWeightByTotal",
+      "Version": "2.35"
+    },
+    {
+      "SystemName": "Shipping.ShipStation",
+      "Version": "1.24"
+    },
+    {
+      "SystemName": "Shipping.UPS",
+      "Version": "1.70"
+    },
+    {
+      "SystemName": "Tax.FixedOrByCountryStateZip",
+      "Version": "1.43"
+    },
+    {
+      "SystemName": "Widgets.NivoSlider",
+      "Version": "1.45"
+    },
+    {
+      "SystemName": "DiscountRequirement.HasOneProduct",
+      "Version": "Version: 1.78"
+    },
+    {
+      "SystemName": "Shipping.AustraliaPost",
+      "Version": "Version: 1.20"
+    },
+    {
+      "SystemName": "Shipping.CanadaPost",
+      "Version": "Version: 2.02"
+    },
+    {
+      "SystemName": "PromotionFeed.Froogle",
+      "Version": "Version: 1.78"
+    },
+    {
+      "SystemName": "Shipping.USPS",
+      "Version": "1.51"
+    },
+    {
+      "SystemName": "FoxNetSoft.SquareWebPayments",
+      "Version": "1.01"
+    },
+    {
+      "SystemName": "Payments.PayPalStandard",
+      "Version": "1.71"
+    },
+    {
+      "SystemName": "NopStation.Core",
+      "Version": "4.50.1.6"
+    },
+    {
+      "SystemName": "NopStation.Plugin.Tax.TaxJar",
+      "Version": "4.50.2.3"
+    }
+  ],
+  "PluginNamesToUninstall": [],
+  "PluginNamesToDelete": [],
+  "PluginNamesToInstall": []
+}

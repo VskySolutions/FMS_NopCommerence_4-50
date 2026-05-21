@@ -1,0 +1,611 @@
+﻿@model EstimateDetailsModel
+@using Nop.Web.Models.Estimate;
+
+<div class="estimate-full-page">
+    <div class="page-title-new">
+        <h1 style="display:inline-block;">My Estimate List</h1>
+
+        <input id="SeName" name="SeName" value="@Model.SeName" style="display:none" />
+        @if (Model.IsCustomer)
+        {
+            <a href="@Url.RouteUrl("NewEstimate")" style="float: right;" class="estimate-btn">
+                <i class="fas fa-plus-square"></i>Add Estimate
+            </a>
+        }
+    </div>
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.AccountNavigationBefore, additionalData = Model })
+
+    @if (Model.NavBar.Count() > 0)
+    {
+        <table class="estimate-table">
+            <thead>
+                <tr>
+                    <th>Estimate Id</th>
+                    @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+                    {
+                        <th style="width:25%;">Estimate Name</th>
+                        <th style="width:30%;">Description</th>
+                        <th>Created On</th>
+                        <th>Created For</th>
+                    }
+                    else
+                    {
+                        <th style="width:30%;">Estimate Name</th>
+                        <th style="width:35%;">Description</th>
+                        <th>Created On</th>
+                    }
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.NavBar)
+                {
+                    <tr>
+                        <td>@item.ListId</td>
+                        <td>
+                            @* <a href="@Url.RouteUrl("goestimate", new { Estimateid = item.ListId })">
+                    @item.Name
+                    </a> *@
+                            @item.Name
+                        </td>
+                        <td>@item.Description</td>
+                        <td>@item.CreatedOn</td>
+                        @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+                        {
+                            <td>@item.CratedbyStr</td>
+                        }
+                        <td>
+                            @* @if (item.IsEstimateItems)
+                    {
+                    <a href="@Url.RouteUrl("goestimate", new { Estimateid = item.ListId, isView = true })" data-toggle="tooltip" title="View Estimate">
+                    <span style="color:#555555;font:bold;" class="fa fa-eye"></span>
+                    </a>
+                    } *@
+                            <a href="@Url.RouteUrl("goestimate", new { Estimateid = item.ListId, isView = false })" data-toggle="tooltip" title="Edit Estimate">
+                                <span style="color:#555555;font:bold;" class="fas fa-edit"></span>
+                            </a>
+                            @if (item.IsEstimateItems)
+                            {
+                                <a href="#" id="LinkCopyEstimate" data-estimateid="@item.ListId" data-toggle="tooltip" title="Copy Estimate">
+                                    <span style="color:#555555;font:bold;" class="fa fa-copy"></span>
+                                </a>
+                            }
+                            <a href="#" id="DeleteEstimate" data-estimateid="@item.ListId" data-toggle="tooltip" title="Delete Estimate">
+                                <span style="color:#555555;font:bold;" class="fas fa-trash-alt"></span>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            @foreach (var item in Model.NavBar)
+            {
+                <div class="modal fade" id="CopyPop_@item.ListId" tabindex="-1" role="dialog" aria-labelledby="modalLabel_@item.ListId" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="#">All items will be copied into new estimate!</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group" style="padding-bottom:10px;">
+                                    <label for="CopyName_@item.ListId">Estimate Name:</label>
+                                    <input type="text" id="CopyName_@item.ListId" class="form-control" required />
+                                </div>
+                                @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+                                {
+                                    <div class="form-group" style="min-width: 200px;padding-bottom:10px;">
+                                        <label style="padding-right:37px;">Customer:</label>
+                                        @Html.DropDownListFor(m => m.CreatedBy, Model.CustomerList, new { @class = "form-control", @id = "CreatedBy_" + item.ListId })
+                                    </div>
+                                }
+                                <div class="form-group">
+                                    <label for="CopyDescriptions_@item.ListId" style="padding-right:26px;">Description:</label>
+                                    <textarea id="CopyDescriptions_@item.ListId" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary btnAddCopyEstimate" data-estimateid="@item.ListId">
+                                    Copy Estimate
+                                </button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </table>
+    }
+    else
+    {
+        <table class="estimate-table">
+            <thead>
+                <tr>
+                    <th>Estimate Id</th>
+                    @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+                    {
+                        <th style="width:25%;">Estimate Name</th>
+                        <th style="width:30%;">Description</th>
+                        <th>Created On</th>
+                        <th>Created For</th>
+                    }
+                    else
+                    {
+                        <th style="width:30%;">Estimate Name</th>
+                        <th style="width:35%;">Description</th>
+                        <th>Created On</th>
+                    }
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="8">
+                        <span style="color:#f10a0a;">No Estimates are available.</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
+</div>
+
+<script type="text/javascript">
+    $(document).on('click', '.btnAddCopyEstimate', function () {
+        var estimateId = $(this).data('estimateid');
+        var name = $("#CopyName_" + estimateId).val();
+        var description = $("#CopyDescriptions_" + estimateId).val();
+        var customerId = $("#CreatedBy_" + estimateId).val();
+
+        //console.log("Estimate ID:", estimateId, "Name:", name, "Description:", description, "CustomerId", customerId);
+
+        // Construct the URL
+        var URL = "/Estimate/CopyEstimate?EstimateId=" + estimateId + "&Name=" + name + "&Description=" + description + "&CustomerId=" + customerId;
+
+        // Perform the AJAX request
+        $.ajax({
+            type: 'POST',
+            url: URL,
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json",
+            success: function (data) {
+                if (data.ErrorMsg) {
+                    displayBarNotification(data.ErrorMsg, 'error', 0);
+                } else {
+                    $(".modal").modal('hide');
+                    location.reload(true); // Refresh the page
+                    displayBarNotification('Copied Estimate Successfully...', 'success', 3500);
+                }
+            }
+        });
+    });
+
+    $(document).on('click', '#DeleteEstimate', function (e) {
+        e.preventDefault();
+
+        var estimateId = $(this).data('estimateid');
+        var deleteUrl = "/Estimate/DeleteEstimate";
+
+        // Show the dialog
+        $('#custom-delete-dialog').removeClass('hidden');
+
+        // Handle Confirm button click
+        $('#confirm-delete').off('click').on('click', function () {
+            $('#custom-delete-dialog').addClass('hidden'); // Hide the dialog
+
+            // Perform the delete operation
+            $.ajax({
+                type: "POST",
+                url: deleteUrl,
+                data: { EstimateId: estimateId },
+                success: function (response) {
+                    location.reload();
+                    displayBarNotification('Deleted Estimate Successfully.');
+                },
+                error: function (xhr, status, error) {
+                    alert("An error occurred while deleting the estimate: " + error);
+                }
+            });
+        });
+
+        // Handle Cancel button click or Close button
+        $('#cancel-delete, #close-dialog').off('click').on('click', function () {
+            $('#custom-delete-dialog').addClass('hidden'); // Simply hide the dialog
+        });
+    });
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".close").click(function () {
+            $(".modal.Prod").hide();
+            $("body").css("overflow", "visible");
+
+        })
+
+        $(".cancelNo").click(function () {
+            $(".modal.Prod").hide();
+            $("body").css("overflow", "visible");
+        })
+    })
+</script>
+
+<style>
+    .page-title-new {
+        border-bottom: 2px solid #3266ae;
+        min-height: 50px;
+        margin: 0 0 20px;
+    }
+
+    .estimate-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: background-color 0.3s, transform 0.2s;
+        color: white;
+        padding: 10px 10px;
+        background-color: #467e9f;
+        border-radius: 5px;
+    }
+
+        .estimate-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.00);
+        }
+    /* Full-page container styles */
+    .estimate-full-page {
+        margin: 0 auto;
+        /* padding: 20px; */
+        max-width: 1200px;
+    }
+
+        .estimate-full-page .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+    /* Table styling */
+    .estimate-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+    }
+
+        .estimate-table th, .estimate-table td {
+            border: 1px solid #ddd;
+            padding: 8px 5px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .estimate-table thead {
+            background-color: #f4f4f4;
+        }
+
+        .estimate-table th {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .estimate-table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .estimate-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .estimate-table td a {
+            margin-right: 5px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+            .estimate-table td a:hover {
+                color: #0056b3;
+            }
+
+        .estimate-table td i {
+            font-size: 14px;
+        }
+
+        .estimate-table td {
+            word-break: break-word;
+            white-space: normal;
+        }
+</style>
+
+<script>
+    $(document).on('click', '#LinkCopyEstimate', function (e) {
+        e.preventDefault();
+        var estimateId = $(this).data('estimateid');
+        $("#CopyPop_" + estimateId).modal('show');
+    });
+</script>
+
+<style>
+    .modal-dialog {
+        top: 40%;
+        transform: translateY(-50%);
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1050;
+        display: none;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+        outline: 0;
+    }
+
+    .modal-dialog {
+        position: relative;
+        width: 600px;
+        margin: auto;
+    }
+
+    @@Media (min-width: 768px) {
+        .modal-content {
+            -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        }
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fff;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #999;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 6px;
+        outline: 0;
+        -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+        box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    }
+
+    .modal-header {
+        padding: 15px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+        .modal-header .close {
+            margin-top: -20px;
+        }
+
+    button.close {
+        -webkit-appearance: none;
+        padding: 0;
+        cursor: pointer;
+        background: 0 0;
+        border: 0;
+    }
+
+    .close {
+        float: right;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        filter: alpha(opacity=20);
+        opacity: .2;
+    }
+
+    .modal-title {
+        margin: 0;
+        line-height: 1.42857143;
+    }
+
+    .modal {
+        background: rgba(0, 0, 0, 0.62);
+    }
+
+
+    .modal-body {
+        position: relative;
+        padding: 15px;
+    }
+
+    .modal-footer {
+        padding: 15px;
+        text-align: right;
+        border-top: 1px solid #e5e5e5;
+        overflow: auto;
+    }
+
+        .modal-footer .btn {
+            padding: 5px 15px;
+            line-height: 20px;
+        }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .btn-default:hover, .btn-default:active, .btn-default.hover {
+        background-color: #e7e7e7;
+    }
+
+    .margin-r-5 {
+        margin-right: 5px;
+    }
+
+    .btn-default {
+        background-color: #f4f4f4;
+        color: #444;
+        border-color: #ddd;
+    }
+
+    .btn {
+        border-radius: 3px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid transparent;
+    }
+
+        .btn:active {
+            -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+            -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+            box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+        }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .btn-primary {
+        background-color: #3c8dbc;
+        border-color: #367fa9;
+    }
+
+    .btn {
+        border-radius: 3px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid transparent;
+    }
+
+    .header, .header-upper, .header-lower {
+        z-index: 0;
+    }
+</style>
+
+@* Confirmation dialog box for delete *@
+<div id="custom-delete-dialog" class="dialog hidden">
+    <div class="dialog-content">
+        <div class="dialog-header">
+            <h3>Are you sure?</h3>
+            <button class="close-dialog" id="close-dialog">×</button>
+        </div>
+        <div class="dialog-body">
+            <p>Are you sure you want to delete this estimate?</p>
+        </div>
+        <div class="dialog-footer">
+            <button id="confirm-delete" class="btn btn-primary">Yes</button>
+            <button id="cancel-delete" class="btn btn-secondary">No, cancel</button>
+        </div>
+    </div>
+</div>
+<style>
+    /* Dialog container */
+    .dialog {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    /* Dialog box */
+    .dialog-content {
+        background: #fff;
+        width: 400px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.3s;
+    }
+
+    /* Dialog header */
+    .dialog-header {
+        padding: 16px;
+        background: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .dialog-header h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    .close-dialog {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /* Dialog body */
+    .dialog-body {
+        padding: 16px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    /* Dialog footer */
+    .dialog-footer {
+        padding: 16px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        background: #f5f5f5;
+        border-top: 1px solid #ddd;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .btn-primary {
+        background: #007bff;
+        color: #fff;
+    }
+
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+
+    .btn-secondary {
+        background: #e0e0e0;
+        color: #333;
+    }
+
+        .btn-secondary:hover {
+            background: #c0c0c0;
+        }
+
+    /* Hide dialog */
+    .hidden {
+        display: none;
+    }
+
+    /* Fade-in animation */
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+</style>

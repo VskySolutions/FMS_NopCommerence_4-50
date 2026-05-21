@@ -1,0 +1,237 @@
+﻿@model Nop.Web.Models.VideoGallary.VideoGallaryModel
+@{
+     Layout = "_ColumnsOne";
+
+    //title
+     NopHtml.AddTitleParts(T("PageTitle.Register").Text);
+}
+
+<h2>Videos</h2>
+<div>
+    <a href="@Url.Action("VideoGalleryMap","Home", new { OrderByDate = 0 })" class="fa fa-video-camera">
+        <i class="fa fa-arrow-alt-circle-down" aria-hidden="true"></i>
+    </a>
+    <a href="@Url.Action("VideoGalleryMap","Home", new { OrderByDate = 1 })" >
+         <i class="fa fa-arrow-alt-circle-up" aria-hidden="true"></i>
+    </a>
+</div>
+<div class="container">
+    <div class="row">
+        @if(Model.OrderByDate==1)
+        {
+            foreach (var item in Model.VideoGallaryList.OrderByDescending(m=>m.CreatedDate))
+            {
+                <div class="col-3" style="margin:10px">
+                    <div class="video-block" >
+                        <div class="videoBox">
+                            <a class="modal-toggle openframe" id="@item.VideoUrl">
+                                <img src='@item.VideoTumbnailImage'  style="height:200px;"/>
+                            </a>
+                        </div>
+                        <div class="videoTitle" >
+                            @item.VideoTitle
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            foreach (var item in Model.VideoGallaryList.OrderBy(m=>m.CreatedDate))
+            {
+                <div class="col-3" style="margin:10px">
+                    <div class="video-block" >
+                        <div class="videoBox">
+                            <a class="modal-toggle openframe" id="@item.VideoUrl">
+                                <img src='@item.VideoTumbnailImage'  style="height:200px;"/>
+                            </a>
+                        </div>
+                        <div class="videoTitle" >
+                            @item.VideoTitle
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+    </div>
+</div>
+<div class="modal" id="exampleModal">
+    <div class="modal-overlay modal-toggle"></div>
+    <div class="modal-wrapper modal-transition" style="width:70%;margin-left:-35%">
+        <div class="modal-header">
+            <button class="modal-close modal-toggle closeframe">X</button>
+            <h2 class="modal-heading">Video Title</h2>
+        </div>
+
+        <div class="modal-body">
+            <div class="modal-content">
+               <iframe height="315" id="IframeVideoUrl" src="https://www.youtube.com/embed/Pezl7Ullzi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+           .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+} 
+     .col-3{
+        -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+    }
+    iframe{
+        width: 100%;
+    }
+    .video-block{
+        margin: 10px 0;
+    }
+    .videoBox img{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-shadow: inset 0 0 10px
+    }
+    .videoTitle{
+        text-align: center;
+        padding: 7px 10px;
+        background: #b5b5b5;
+        color: #000;
+        font-weight: bold;
+    }
+       /* 1. Ensure this sits above everything when visible */
+       .modal {
+           position: absolute;
+           z-index: 10000; /* 1 */
+           top: 0;
+           left: 0;
+           visibility: hidden;
+           width: 100%;
+           height: 100%;
+       }
+
+           .modal.is-visible {
+               visibility: visible;
+           }
+
+       .modal-overlay {
+           position: fixed;
+           z-index: 10;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: hsla(0, 0%, 0%, 0.5);
+           visibility: hidden;
+           opacity: 0;
+           transition: visibility 0s linear 0.3s, opacity 0.3s;
+       }
+
+       .modal.is-visible .modal-overlay {
+           opacity: 1;
+           visibility: visible;
+           transition-delay: 0s;
+       }
+
+       .modal-wrapper {
+           position: absolute;
+           z-index: 9999;
+           top: 1em;
+           left: 50%;
+           width: 70%;
+           margin-left: -35%;
+           background-color: #fff;
+           box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+       }
+
+       .modal-transition {
+           transition: all 0.3s 0.12s;
+           transform: translateY(-10%);
+           opacity: 0;
+       }
+
+       .modal.is-visible .modal-transition {
+           transform: translateY(0);
+           opacity: 1;
+       }
+
+       .modal-header,
+       .modal-content {
+           padding: 1em;
+       }
+
+       .modal-header {
+           position: relative;
+           background-color: #fff;
+           box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
+           border-bottom: 1px solid #e8e8e8;
+       }
+
+       .modal-close {
+           position: absolute;
+           top: 0;
+           right: 0;
+           padding: 1em;
+           color: #aaa;
+           background: none;
+           border: 0;
+       }
+
+           .modal-close:hover {
+               color: #777;
+           }
+
+       .modal-heading {
+           font-size: 1.125em;
+           margin: 0;
+           -webkit-font-smoothing: antialiased;
+           -moz-osx-font-smoothing: grayscale;
+       }
+
+       .modal-content > *:first-child {
+           margin-top: 0;
+       }
+
+       .modal-content > *:last-child {
+           margin-bottom: 0;
+       }
+</style>
+<script>
+    $(document).ready(function()
+    {
+        $('.modal-toggle').on('click', function (e) {
+            e.preventDefault();
+            if ($(this).hasClass("openframe")) {
+                var youtTubeUrl = $(this).attr('id');
+                // alert(youtTubeUrl);
+
+                var videoid = youtTubeUrl.match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/);
+                if (videoid != null) {
+                    //console.log("video id = ", videoid[1]);
+                    // alert(videoid[1]);
+                    // value = "bbuf5FvTo3E";
+                    iframeURL = "https://www.youtube.com/embed/" + videoid[1];
+                   // youtTubeUrl.concat(videoid[1]);
+                    //alert(youtTubeUrl);
+                    $("#IframeVideoUrl").attr("src", iframeURL);
+                } else {
+                    console.log("The youtube url is not valid.");
+                }
+            }
+            if ($(this).hasClass("closeframe")) {
+                $("#IframeVideoUrl").attr("src", '');
+            }
+
+            $('.modal').toggleClass('is-visible');
+
+        });
+    })
+
+</script>

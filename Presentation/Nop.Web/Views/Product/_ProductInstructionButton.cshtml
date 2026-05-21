@@ -1,0 +1,9 @@
+﻿@model ProductDetailsModel
+@using Nop.Web.Models.Catalog;
+@if (Model.EmailAFriendEnabled)
+{
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <div class="#">        
+        <a href="~/ProductInsructionsFile/@Model.ProdInstructionFilePath" style="padding: 9px;" class="button-2" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:20px;"></i> Installation Guide</a>       
+    </div>
+}

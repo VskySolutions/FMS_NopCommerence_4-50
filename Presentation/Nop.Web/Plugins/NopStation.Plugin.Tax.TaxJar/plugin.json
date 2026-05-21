@@ -1,0 +1,18 @@
+﻿{
+  "Group": "Nop-Station",
+  "FriendlyName": "Tax Jar",
+  "SupportedVersions": [
+    "4.50"
+  ],
+  "Author": "Nop-Station Team",
+  "DisplayOrder": 1,
+  "FileName": "NopStation.Plugin.Tax.TaxJar.dll",
+  "Description": "This plugin allows to apply TaxJar.",
+  "LimitedToStores": [],
+  "LimitedToCustomerRoles": [],
+  "DependsOnSystemNames": [
+    "NopStation.Core"
+  ],
+  "SystemName": "NopStation.Plugin.Tax.TaxJar",
+  "Version": "4.50.2.3"
+}

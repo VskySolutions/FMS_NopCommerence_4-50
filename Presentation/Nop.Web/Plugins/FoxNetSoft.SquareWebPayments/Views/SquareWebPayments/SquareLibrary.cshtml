@@ -1,0 +1,14 @@
+﻿@using Nop.Web.Framework.UI
+@using Nop.Core
+@inject INopHtmlHelper NopHelper
+@model FoxNetSoft.Plugin.Payments.SquareWebPayments.Models.SquarePaymentLibraryModel
+@{
+    Layout = "";
+    var scriptUrl = Model.UseSandbox ? "https://sandbox.web.squarecdn.com/v1/square.js" :"https://web.squarecdn.com/v1/square.js";
+    /*
+     NopHelper.AddScriptParts(ResourceLocation.Footer, scriptUrl);
+    */
+}
+<link rel="stylesheet" href="~/Plugins/FoxNetSoft.SquareWebPayments/Styles/styles.css" />
+<!script src="@scriptUrl"></!script>
+

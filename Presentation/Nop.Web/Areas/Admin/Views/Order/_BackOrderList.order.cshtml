@@ -1,0 +1,192 @@
+﻿@model OrderModel
+
+@using Nop.Core.Domain.Tax;
+@using Nop.Core.Domain.Catalog;
+
+<div class="card-body">
+    <div class="form-group row">
+        <div class="col-md-12" style="overflow-x: auto;">
+            @foreach (var item in Model.Items)
+            {
+                <script>
+                    $(document).ready(function () {
+                        toggleOrderItemEdit@(item.Id)(false); 
+                    });
+                </script>
+
+                <script>
+                    function toggleOrderItemEdit@(item.Id)(editMode) {
+                        if (editMode) {
+                            $('#pnlEditPvUnitPrice@(item.Id)').showElement();
+                            $('#pnlEditPvQuantity@(item.Id)').showElement();
+                            $('#pnlEditPvDiscount@(item.Id)').showElement();
+                            $('#pnlEditPvPrice@(item.Id)').showElement();
+                            $('#btnEditOrderItem@(item.Id)').hideElement();
+                            $('#btnDeleteOrderItem@(item.Id)').hideElement();
+                            $('#btnSaveOrderItem@(item.Id)').showElement();
+                            $('#btnCancelOrderItem@(item.Id)').showElement();
+                        } else {
+                            $('#pnlEditPvUnitPrice@(item.Id)').hideElement();
+                            $('#pnlEditPvQuantity@(item.Id)').hideElement();
+                            $('#pnlEditPvDiscount@(item.Id)').hideElement();
+                            $('#pnlEditPvPrice@(item.Id)').hideElement();
+                            $('#btnEditOrderItem@(item.Id)').showElement();
+                            $('#btnDeleteOrderItem@(item.Id)').showElement();
+                            $('#btnSaveOrderItem@(item.Id)').hideElement();
+                            $('#btnCancelOrderItem@(item.Id)').hideElement();
+                        }
+                    }
+                </script>
+            }
+
+            <table class="table table-hover table-bordered">
+                <col />
+                <col />
+                @if (Model.HasDownloadableProducts)
+                {
+                    <col />
+                }
+                <col />
+                <col />
+                <col />
+                <col />
+                @if (!Model.IsLoggedInAsVendor)
+                {
+                    <col />
+                }
+            <thead>
+            <tr>
+                <th>
+                    <label>Id</label>
+                </th>
+                <th>
+                    @T("Admin.Orders.Products.Picture")
+                </th>
+                <th>
+                    @T("Admin.Orders.Products.ProductName")
+                </th>
+                @if (Model.HasDownloadableProducts)
+                {
+                    <th>
+                        @T("Admin.Orders.Products.Download")
+                    </th>
+                }
+                <th>
+                    <label>Total Quantity</label>
+                </th>
+                <th>
+                    <label>Back Order Quantity</label>
+                </th>
+                <th>
+                    <label>Sku</label>
+                </th>
+                <th>
+                    <label>BOs Filled</label>
+                </th>
+                <th>
+                </th>
+            </tr>
+            </thead>
+                <tbody>
+                    @foreach (var item in Model.Items.Where(m=>m.BackOrderQty>0))
+                    {
+                        <tr>
+                        <td style="width: 10%;" class="text-center">
+                             @Html.Raw(item.Id)
+                        </td>
+                        <td class="text-center">
+                            <img src="@item.PictureThumbnailUrl" alt="" title=""/>
+                        </td>
+                        <td style="width: 15%;" class="text-left">
+                            <em><a asp-controller="Product" asp-action="Edit" asp-route-id="@item.ProductId">@item.ProductName</a></em>
+                            @if (!string.IsNullOrEmpty(item.AttributeInfo))
+                            {
+                                <p>
+                                    @Html.Raw(item.AttributeInfo)
+                                </p>
+                            }
+                        </td>
+
+                        @if (Model.HasDownloadableProducts)
+                        {
+                            <td style="width: 15%;" class="text-center">
+                                @if (item.IsDownload)
+                                {
+                                    <div>
+                                        @string.Format(T("Admin.Orders.Products.Download.DownloadCount").Text, item.DownloadCount)
+                                        <button type="submit" name="btnResetDownloadCount@(item.Id)" title="@T("Admin.Orders.Products.Download.ResetDownloadCount.Title")" id="btnResetDownloadCount@(item.Id)" class="btn btn-sm bg-navy">
+                                            @T("Admin.Orders.Products.Download.ResetDownloadCount")
+                                        </button>
+                                        <hr/>
+                                    </div>
+                                    if (item.DownloadActivationType == DownloadActivationType.Manually)
+                                    {
+                                        <div>
+                                            <button type="submit" name="btnPvActivateDownload@(item.Id)" id="btnPvActivateDownload@(item.Id)" class="btn btn-sm bg-green">
+                                                @(item.IsDownloadActivated ? T("Admin.Orders.Products.Download.Deactivate") : T("Admin.Orders.Products.Download.Activate"))
+                                            </button>
+                                            <hr/>
+                                        </div>
+                                    }
+                                    <div>
+                                        <div>
+                                            <strong>
+                                                @T("Admin.Orders.Products.License")
+                                            </strong>
+                                        </div>
+                                        @if (item.LicenseDownloadGuid != Guid.Empty)
+                                        {
+                                            <div>
+                                                <a asp-controller="Download" asp-action="DownloadFile" asp-route-downloadGuid="@item.LicenseDownloadGuid">@T("Admin.Orders.Products.License.DownloadLicense")</a>
+                                            </div>
+                                        }
+                                        <button type="submit" id="pvlicensefile" name="pvlicensefile" onclick="javascript:OpenWindow('@(Url.Action("UploadLicenseFilePopup", "Order", new {id = Model.Id, orderItemId = item.Id, btnId = "btnRefreshPage", formId = "order-form"}))', 500, 400, true); return false;" class="btn btn-sm bg-olive">
+                                            @T("Admin.Orders.Products.License.UploadFile")
+                                        </button>
+                                    </div>
+                                }
+                            </td>
+                        }
+                       
+                        <td style="width: 10%;" class="text-center">
+                            <div>@item.Quantity</div>
+                        </td>
+                        <td style="width: 15%;" class="text-center">
+                            @item.BackOrderQty
+                        </td> 
+                        <td style="width: 15%;" class="text-center">
+                           @if (!string.IsNullOrEmpty(item.Sku))
+                            {
+                                <p>
+                                    @item.Sku
+                                </p>
+                            }
+                        </td>
+                        <td style="width: 15%;" class="text-center">
+                           @item.BackOrderSoldQty
+                        </td>
+                        <td style="width: 15%;" class="text-center">
+                            @if (item.BackOrderDeliverStatus==30)
+                            { 
+                                    <span class="grid-report-item green">Complete</span >
+                            }
+                            else if(item.BackOrderDeliverStatus==10)
+                            {
+                                <span class="grid-report-item yellow">Pending</span > 
+                            }
+                        </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    @if (!string.IsNullOrEmpty(Model.CheckoutAttributeInfo) && !Model.IsLoggedInAsVendor)
+    {
+        <div class="form-group row">
+            <div class="col-md-12">
+                @Html.Raw(Model.CheckoutAttributeInfo)
+            </div>
+        </div>
+    }
+</div>

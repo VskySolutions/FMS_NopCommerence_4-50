@@ -1,0 +1,74 @@
+﻿@model ProductDetailsModel
+
+<div class="gallery">
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsBeforePictures, additionalData = Model })
+    <div class="picture">
+        @if (Model.DefaultPictureZoomEnabled && Model.PictureModels.Count == 1)
+        {
+            <img id="main-product-img-@Model.Id" title="@Model.DefaultPictureModel.Title" alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" class="main-image" data-zoom-image="@Model.DefaultPictureModel.FullSizeImageUrl" onchange="OnThumbSelect(this)" />
+        }
+        else
+        {
+            <img  id="main-product-img-@Model.Id"  title="@Model.DefaultPictureModel.Title" alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" class="main-image" data-zoom-image="@Model.DefaultPictureModel.FullSizeImageUrl"  onchange="OnThumbSelect(this)" />
+        }
+    </div>
+    @if (Model.PictureModels.Count > 1 && Model.DefaultPictureZoomEnabled)
+    {
+        <div class="picture-thumbs">
+            @foreach (var picture in Model.PictureModels)
+            {
+                <a class="thumb-item" 
+                   title="@picture.Title" 
+                   alt="@picture.AlternateText" 
+                   href="javascript:void(0)" 
+                   data-thumnail="@picture.ThumbImageUrl"
+                   data-defaultsize="@picture.ImageUrl"
+                   data-fullsize="@picture.FullSizeImageUrl" 
+                   onclick="OnThumbSelect(this)">
+                    <img src="@picture.ThumbImageUrl" title="@picture.Title" alt="@picture.AlternateText" />
+                </a>
+            }
+        </div>
+    }
+    else
+    {
+        if (Model.PictureModels.Count > 1)
+        {
+            <div class="picture-thumbs">
+                @foreach (var picture in Model.PictureModels)
+                {
+                    <a class="thumb-item" 
+                       title="@picture.Title" 
+                       alt="@picture.AlternateText" 
+                       href="javascript:void(0)" 
+                       data-thumnail="@picture.ThumbImageUrl"
+                       data-defaultsize="@picture.ImageUrl"
+                       data-fullsize="@picture.FullSizeImageUrl" 
+                       onclick="OnThumbSelect(this)">
+                        <img src="@picture.ThumbImageUrl" title="@picture.Title" alt="@picture.AlternateText" />
+                    </a>
+                }
+            </div>
+        }
+    }
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.ProductDetailsAfterPictures, additionalData = Model })
+</div>
+<script type="text/javascript">
+    function OnThumbSelect (ele){
+        var Title = $(ele).attr("title");
+        var alt = $(ele).attr("alt");
+        //var href = $(ele).attr("href");
+        //var thumnail = $(ele).attr("data-thumnail");
+        var defaultsize = $(ele).attr("data-defaultsize");
+        var fullsize = $(ele).attr("data-fullsize");
+
+        $(".main-image").attr("title",Title);
+        $(".main-image").attr("alt", alt);
+        $(".main-image").attr("src", defaultsize);
+        $(".main-image").attr("data-zoom-image", fullsize);
+
+        //EZResponsive();
+
+        $(".zoomWindowContainer > div").css("background-image", "url('" + fullsize + "')");
+    }
+</script>

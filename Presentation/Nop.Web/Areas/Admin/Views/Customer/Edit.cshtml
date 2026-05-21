@@ -1,0 +1,410 @@
+@model CustomerModel
+
+@inject AdminAreaSettings adminAreaSettings
+
+@{
+    //page title
+    ViewBag.PageTitle = T("Admin.Customers.Customers.EditCustomerDetails").Text;
+    //active menu item (system name)
+    NopHtml.SetActiveMenuItemSystemName("Customers list");
+}
+
+<form asp-controller="Customer" asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class="content-header clearfix">
+        <h1 class="float-left">
+            @T("Admin.Customers.Customers.EditCustomerDetails") - @Model.LastName @Model.FirstName
+            <small>
+                <i class="fas fa-arrow-circle-left"></i>
+                <a asp-action="List">@T("Admin.Customers.Customers.BackToList")</a>
+            </small>
+        </h1>
+        <div class="float-right">
+            <button type="submit" name="save" class="btn btn-primary">
+                <i class="far fa-save"></i>
+                @T("Admin.Common.Save")
+            </button>
+            <button type="submit" name="save-continue" class="btn btn-primary">
+                <i class="far fa-save"></i>
+                @T("Admin.Common.SaveContinue")
+            </button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sendemail-window">
+                <i class="far fa-envelope"></i>
+                @T("Admin.Customers.Customers.SendEmail")
+            </button>
+            @if (Model.AllowSendingOfPrivateMessage)
+            {
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sendprivatemessage-window">
+                    <i class="fas fa-at"></i>
+                    @T("Admin.Customers.Customers.SendPM")
+                </button>
+            }
+            @if (Model.AllowSendingOfWelcomeMessage)
+            {
+                <button type="submit" id="send-welcome-message" name="send-welcome-message" class="btn btn-success">
+                    <i class="far fa-smile"></i>
+                    @T("Admin.Customers.Customers.SendWelcomeMessage")
+                </button>
+                <nop-action-confirmation asp-button-id="send-welcome-message" />
+            }
+            @if (Model.AllowReSendingOfActivationMessage)
+            {
+                <button type="submit" id="resend-activation-message" name="resend-activation-message" class="btn btn-success">
+                    <i class="fas fa-check-circle"></i>
+                    @T("Admin.Customers.Customers.ReSendActivationMessage")
+                </button>
+                <nop-action-confirmation asp-button-id="resend-activation-message" />
+            }
+            @if (Model.GdprEnabled)
+            {
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success">
+                        <i class="fas fa-download"></i>
+                        @T("Admin.Customers.Customers.Gdpr")
+                    </button>
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">&nbsp;</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-item">
+                            <a asp-action="GdprExport" asp-route-id="@Model.Id">
+                                <i class="far fa-file-code"></i>
+                                @T("Admin.Customers.Customers.Gdpr.Export")
+                            </a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="customer-gdpr-delete" href="#">
+                                <i class="far fa-trash-alt"></i>
+                                @T("Admin.Customers.Customers.Gdpr.Delete")
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            }
+            <span id="customer-delete" class="btn btn-danger">
+                <i class="far fa-trash-alt"></i>
+                @T("Admin.Common.Delete")
+            </span>
+            @await Component.InvokeAsync("AdminWidget", new { widgetZone = AdminWidgetZones.CustomerDetailsButtons, additionalData = Model })
+        </div>
+    </div>
+    @await Html.PartialAsync("_CreateOrUpdate", Model)
+</form>
+<nop-delete-confirmation asp-model-id="@Model.Id" asp-button-id="customer-delete" />
+@if (Model.GdprEnabled)
+{
+    <nop-delete-confirmation asp-model-id="@Model.Id" asp-action="GdprDelete" asp-button-id="customer-gdpr-delete" />
+}
+@if (!string.IsNullOrEmpty(Model.MultiFactorAuthenticationProvider))
+{
+    <nop-delete-confirmation asp-model-id="@Model.Id" asp-action="RemoveBindMFA" asp-button-id="mfa-bind-delete" />
+}
+
+@*send email form*@
+<div id="sendemail-window" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="sendemail-window-title">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="sendemail-window-title">@T("Admin.Customers.Customers.SendEmail")</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <form asp-controller="Customer" asp-action="SendEmail" method="post">
+                <input type="hidden" asp-for="Id" id="SendEmail_Id" />
+                <div class="form-horizontal">
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="SendEmail.Subject" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="SendEmail.Subject" />
+                                <span asp-validation-for="SendEmail.Subject"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="SendEmail.Body" />
+                            </div>
+                            <div class="col-md-9">
+                                @if (adminAreaSettings.UseRichEditorForCustomerEmails)
+                                {
+                                    <nop-editor asp-for="SendEmail.Body" asp-template="RichEditor" />
+                                }
+                                else
+                                {
+                                    <nop-textarea asp-for="SendEmail.Body" />
+                                }
+                                <span asp-validation-for="SendEmail.Body"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="SendEmail.SendImmediately" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="SendEmail.SendImmediately" />
+                                <span asp-validation-for="SendEmail.SendImmediately"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row" id="pnl-send-date">
+                            <div class="col-md-3">
+                                <nop-label asp-for="SendEmail.DontSendBeforeDate" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="SendEmail.DontSendBeforeDate" />
+                                <span asp-validation-for="SendEmail.DontSendBeforeDate"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">
+                            @T("Admin.Customers.Customers.SendEmail")
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#sendemail-window').on('show.bs.modal', function (e) {
+        $("#@Html.IdFor(model => model.SendEmail.SendImmediately)").click(sendImmediately);
+        sendImmediately();
+    });
+
+    function sendImmediately() {
+        alert(#@Html.IdFor(model => model.SendEmail.SendImmediately));
+        if ($('#@Html.IdFor(model => model.SendEmail.SendImmediately)').is(':checked'))
+            $('#pnl-send-date').hideElement();
+        else
+            $('#pnl-send-date').showElement();
+    }
+</script>
+
+@*send PM form*@
+<div id="sendprivatemessage-window" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="sendprivatemessage-window-title">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="sendprivatemessage-window-title">@T("Admin.Customers.Customers.SendPM")</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <form asp-controller="Customer" asp-action="SendPm" method="post">
+                <input type="hidden" asp-for="Id" id="SendPm_Id" />
+                <div class="form-horizontal">
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="SendPm.Subject" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-editor asp-for="SendPm.Subject" />
+                                <span asp-validation-for="SendPm.Subject"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <nop-label asp-for="SendPm.Message" />
+                            </div>
+                            <div class="col-md-9">
+                                <nop-textarea asp-for="SendPm.Message"></nop-textarea>
+                                <span asp-validation-for="SendPm.Message"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">
+                            @T("Admin.Customers.Customers.SendPM")
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@*Added by Yogesh Kumbhar on Dt: 01-28-2025 & 30-01-2025 & 01-31-2025
+  Add multiple emails for customer*@
+<div id="addemail-window" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="sendemail-window-title">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="sendemail-window-title">Add Email</h4>
+                <button type="button" class="close" data-dismiss="modal" id="modalCloseButtonId" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <form id="emailForm" asp-controller="Customer" asp-action="InsertAndUpdateCustmerEmail" method="post">
+                <input type="hidden" asp-for="Id" id="CustomerEmail_Id" />
+                <div class="form-horizontal">
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <div class="col-md-2">
+                                <label for="CustomerEmail_Email" class="control-label">
+                                    Email <span class="required">*</span>
+                                </label>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="email" class="form-control text-box single-line"
+                                       id="CustomerEmail_Email" name="CustomerEmail.Email" required />
+                                <span class="field-validation-valid" data-valmsg-for="CustomerEmail.Email" data-valmsg-replace="true"></span>
+                                <input type="hidden" id="emailId" name="CustomerEmail.Id" />
+                            </div>
+                        </div>
+                        <div class="notification-section" style="margin-top:15px;">
+                            <div class="section-title">
+                                <strong>Set Notification Flags:</strong>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-3">
+                                    <nop-editor asp-for="CustomerEmail.IsOrder" />
+                                    <label for="orderFlag">Order Placement</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <nop-editor asp-for="CustomerEmail.IsOrderCancel" />
+                                    <label for="invoiceFlag">Order Cancellation</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <nop-editor asp-for="CustomerEmail.IsEstimate" />
+                                    <label for="estimateFlag">Estimate Added to Cart</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <nop-editor asp-for="CustomerEmail.IsRefund" />
+                                    <label for="refundFlag">Order Refunded</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <nop-editor asp-for="CustomerEmail.IsOrderShipped" />
+                                    <label for="refundFlag">Order Shipped</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="justify-content: center;margin-top: 10px;margin-bottom: 10px;">
+                            <button type="submit" id="saveButton" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@*Added by Yogesh Kumbhar on Dt: 01-28-2025 & 01-29-2025*@
+<script>
+    $(document).ready(function () {
+        $('#addemail-window').modal({
+            backdrop: 'static',
+            keyboard: false,
+            show: false  // This prevents auto-showing on page load
+        });
+
+        $('#modalCloseButtonId').click(function () {
+            window.location.reload();
+        });
+        
+        $(document).on('click', '.delete-email', function () {
+            var button = $(this);
+            var customerId = button.attr("data-id");
+            var email = button.attr("data-email");
+            var emailId = button.attr("data-emailid");
+
+            //console.log("customerId = " + customerId + " email = " + email + " emailId = " + emailId);
+
+            var URL = "/Admin/Customer/DeleteCustomerEmail?customerId=" + customerId + "&emailId=" + emailId;
+
+            if (!confirm(`Are you sure you want to delete the email: ${email}?`)) {
+                return;
+            }
+
+            $.ajax({
+                url: URL,
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                dataType: "json",
+                //data: JSON.stringify({ customerId: customerId, emailId: emailId }),
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        button.closest('tr').remove();
+                        window.location.reload();
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while trying to delete the email.');
+                }
+            });
+        });
+
+        $(document).on('click', function () {
+            $('#delete-email').tooltip('hide');
+        });
+
+        //Added by Yogesh Kumbhar on Dt: 01-31-2025
+        //Get email details.
+        $(document).on('click', '.edit-email', function () {
+            var index = $(this).data('id');
+
+            $.ajax({
+                url: "/Admin/Customer/GetCustomerEmail",
+                type: "POST",
+                data: { emailId: index },
+                success: function (response) {
+                    console.log(response);
+                    if (response.success && response.response) {
+                        var emailData = response.response;
+
+                        console.log("Extracted Data:", emailData);
+
+                        // Check if the elements exist before setting values
+                        $('#emailId').val(emailData.Id);
+                        $('#CustomerEmail_Email').val(emailData.Email);
+                        $('#CustomerEmail_IsOrder').prop('checked', emailData.IsOrder);
+                        $('#CustomerEmail_IsOrderCancel').prop('checked', emailData.IsOrderCancel);
+                        $('#CustomerEmail_IsOrderShipped').prop('checked', emailData.IsOrderShipped);
+                        $('#CustomerEmail_IsEstimate').prop('checked', emailData.IsEstimate);
+                        $('#CustomerEmail_IsRefund').prop('checked', emailData.IsRefund);
+
+                        $('#saveButton').text('Update');
+                        $('#addemail-window').modal('show');
+                    } else {
+                        console.error("Invalid Response Data:", response);
+                    }
+                }
+            });
+        });
+
+        // Handle modal reset when closed
+        $(document).on('click', '#modalCloseButtonId', function () {
+            resetModal();
+        });
+
+        function resetModal() {
+            // Reset input fields
+            $('#CustomerEmail_Email').val('');
+            $('#emailId').val('');
+
+            // Reset button text
+            $('#saveButton').text('Save');
+        }
+    });
+</script>
+<style>
+    .notification-section {
+        background: #f5f5f5;
+        border-left: 4px solid #007bff;
+        padding: 15px;
+        border-radius: 6px;
+    }
+
+    .section-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .custom-checkbox {
+        margin-right: 5px;
+    }
+
+</style>

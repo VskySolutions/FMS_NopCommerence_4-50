@@ -1,0 +1,111 @@
+﻿@model EstimateDetailsModel
+@using Nop.Core.Domain.Seo;
+@using Nop.Core.Infrastructure;
+@using Nop.Web.Models.Estimate;
+@{
+    //Layout = "~/Views/Shared/_ColumnsEstimate.cshtml";
+
+    //title
+    NopHtml.AddTitleParts("Estimate's");
+    //page class
+    NopHtml.AppendPageCssClassParts("html-shopping-cart-page");
+}
+@* @section left
+{
+    @await Html.PartialAsync("~/Views/Estimate/EstimateNavigation.cshtml", Model)
+} *@
+<form asp-route="NewEstimate" asp-route-returnurl="Estimate" method="post" id="Estimate-details-form" autocomplete="off">
+    <div class="page shopping-cart-page">
+        <div class="page-title">
+            <h1 style="display:inline-block;">Estimate Items</h1>
+
+            <input id="SeName" name="SeName" value="@Model.SeName" style="display:none" />
+
+            <a href="@Url.RouteUrl("EstimateList")" style="float: right;margin-top:15px;" class="btn bg-grey backlist-btn">
+                <i class="fa fa-angle-double-left"></i>Back to list
+            </a>
+
+            <a href="@Url.RouteUrl("NewEstimate")" style="float: right;margin-top:15px;margin-right:12px;" class="btn btn-primary estimate-btn">
+                <i class="fas fa-plus-square"></i>Add Estimate
+                @* <span class="button-separator">|</span> *@
+            </a>
+            @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+            {
+                <a href="/Admin/Customer/Create" style="float: right;margin-top:15px;margin-right:12px;" class="btn btn-primary export-pdf-btn">
+                    <i class="fas fa-user-plus"></i> Add Customer
+                </a>
+            }
+            @* @if (Model.Items.Count() > 0)
+            {
+            <a href="#" id="LinkCopyEstimate" style="float: right;margin-top:30px; margin-right:12px; display:inline-block;">
+            <span style="color:#555555;font:bold;" class="fa fa-copy"> <b>Copy Estimate</b></span>
+            <span class="button-separator">|</span>
+            </a>
+            } *@
+        </div>
+        <div class="page-body">
+            @await Html.PartialAsync("~/Views/Estimate/EstimateSummary.cshtml", Model)
+        </div>
+    </div>
+</form>
+
+@{
+    if (TempData["msg"] != null)
+    {
+        <script type="text/javascript">
+            $(function () {
+                var msg = "@(TempData["msg"] as string)";
+                if (msg !== "") {
+                    displayBarNotification(msg, 'success', 3500);
+                    TempData["msg"] = "";
+                }
+            });
+        </script>
+    }
+}
+<style>
+    .export-pdf-btn {
+        background-color: #2e7555;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+    .button-separator {
+        color: #ccc; /* Separator color */
+        font-size: 1.2rem; /* Adjust the size */
+        margin: 0 5px; /* Adjust spacing */
+    }
+
+    .estimate-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: background-color 0.3s, transform 0.2s;
+        color:white;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+
+        .estimate-btn:hover {
+            background-color: #0056b3; /* Darker shade of blue for hover effect */
+            transform: scale(1.00); /* Slight zoom on hover */
+        }
+
+    .backlist-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: background-color 0.3s, transform 0.2s;
+        color: white;
+        padding: 10px 10px;
+        background-color: grey;
+        border-radius: 5px;
+    }
+
+        .backlist-btn:hover {
+            background-color: #555555; /* Darker shade of blue for hover effect */
+            transform: scale(1.00); /* Slight zoom on hover */
+        }
+</style>

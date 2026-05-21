@@ -1,0 +1,57 @@
+﻿@model VideoGallaryModel
+@using Nop.Web.Areas.Admin.Models.VideoGallaries
+@Html.ValidationSummary(false)
+@{
+    ViewBag.Title = "Video Gallary";
+}
+
+
+ <form sp-controller="VideoGallary" asp-action="AddVideo" method="post">
+
+    <div style="margin-top:0; padding:15px;">
+        <h3>Add Video Link </h3>
+        <h4>@Html.ActionLink(" Video list", "List", "VideoGallary")</h4>
+    </div>
+    <div class="panel-group content">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group row">
+                     <div class="col-md-3">
+                          <label>Video title:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input asp-for="VideoTitle" />
+		                <span asp-validation-for="VideoTitle"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <label>Video youtube url:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input asp-for="VideoUrl" />
+		                <span asp-validation-for="VideoUrl"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                         <label>Publish:</label>
+                    </div>
+                    <div class="col-md-6">
+                       <input asp-for="Publish" />
+		                <span asp-validation-for="Publish"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9">
+                        <button type="submit" name="save" class="btn bg-blue">
+                            <i class="fa fa-floppy-o"></i>
+                            @T("Admin.Common.Save")
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </form>

@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FoxNetSoft.Plugin.Payments.SquareWebPayments/1.00": {
+        "dependencies": {
+          "Polly": "7.0.0.0",
+          "Square": "25.0.0.0"
+        },
+        "runtime": {
+          "FoxNetSoft.Plugin.Payments.SquareWebPayments.dll": {}
+        }
+      },
+      "Polly/7.0.0.0": {
+        "runtime": {
+          "Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.3.0"
+          }
+        }
+      },
+      "Square/25.0.0.0": {
+        "runtime": {
+          "Square.dll": {
+            "assemblyVersion": "25.0.0.0",
+            "fileVersion": "25.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FoxNetSoft.Plugin.Payments.SquareWebPayments/1.00": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Polly/7.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Square/25.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

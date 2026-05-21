@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Square Web Payments",
+  "SystemName": "FoxNetSoft.SquareWebPayments",
+  "Version": "1.01",
+  "SupportedVersions": [ "4.50" ],
+  "Author": "FoxNetSoft",
+  "DisplayOrder": 1,
+  "FileName": "FoxNetSoft.Plugin.Payments.SquareWebPayments.dll",
+  "Description": "Square Web Payments SDK"
+}

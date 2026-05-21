@@ -1,0 +1,85 @@
+﻿@model IList<ProductOverviewModel>
+<link type="text/css" rel="Stylesheet" href="@Url.Content("~/Themes/DefaultClean/Content/custom-styleni3.css")" />
+@if (Model.Count > 0)
+{
+     <div class="home-page-product-grid">
+        <h1 class="title" style="text-align:left;background: #555; color: #fff;padding: 10px 10px;">
+            Featured Products
+        </h1>
+        <div class="item-grid item-grid-home">
+            @foreach (var item in Model.Take(4))
+            {
+                <div class="item-box item-box-home col-md-3">
+                    @await Html.PartialAsync("_ProductBox", item)
+                </div>
+            }
+        </div>
+    </div>
+}
+<style>
+    .home-page-product-grid .item-grid.item-grid-home {
+        display: flex;
+        justify-content: center;
+    }
+.home-page-product-grid .item-box{
+    width: 24%;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+.home-page-product-grid h1{
+    position: relative;
+    z-index: 1;
+}
+</style>
+<div class="about-box">
+    <div class="">
+        <h2 class="title" style="text-align: left;background: #555;color: #fff;padding: 10px 10px;">
+            About FMS Accessories
+        </h2>
+        <div class="row">
+            <div class="col-md-12" style="width:100%">
+                <div class="desc">
+                    <div class="">
+                        <p>
+                            FMS Accessories specializes in the production of police motorcycle accessories to make your BMW police motor more efficient and comfortable.  FMS Accessories are not authorized or approved by BMW Motorrad USA and are not covered by any of the BMW motorcycle limited warranties for motorcycles, parts or accessories.<br />
+                            FMS Solutions, LLC warrants to the first retail purchaser of new FMS Accessory products, to be free from defects in materials or workmanship, for a period of three (3) years from the original date of purchase as noted on the FMS Solutions, LLC invoice or original dealer invoice, except for paint and powder-coated finishes, which are warranted for the first 12 months only.  LED lights from Feniex, Inc., Code 3, Inc. and Littlite are covered for 5 years by their manufacturer’s respective warranties – processed through FMS Solutions, LLC.<br />
+                            This warranty extends only to the FMS accessory and does not include: damage caused by accidents or abuse; incorrect installation; labor to diagnose, remove, repair or replace; any consequential damage or loss of use.  Any FMS Accessory suspected of being defective should be returned to FMS Solutions, LLC along with a copy of proof of purchase and warranty request form available on the FMS website.  FMS Solutions, LLC will determine if the FMS accessory has a warrantable defect, and if so, will repair or replace the item and return it to the sender without charge.  The decision to repair or replace said item is solely the prerogative of FMS Solutions, LLC.<br />
+                            Note: Police motors can operate in a very rough environment since police motors are a "tool". They can be dropped, knocked over, etc. without concern as the officer has a job to do and determines what is necessary at any given moment. Warranty is for defects in materials or workmanship. Therefore, the ability of an item to become broken or damaged does not mean it is warranty ... it just means it is broken or damaged and in need of repair or replacement. No manufacturer warrants their products to be indestructible. Any questions should be directed to info@fmsaccessories.com
+                        </p>
+                    </div>
+                    <a href="javascript:void(0)" class="Aboutus-btn" onclick="ShowMoreAboutUs(this)" data-visiable="0">Show More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>    
+    $(document).ready(function () {
+    $( ".scene" ).mouseenter(function() {
+            $(this).find(".cube").removeClass("show-front").addClass("show-right");
+          }).mouseleave(function() {
+            $(this).find(".cube").removeClass("show-right").addClass("show-front");
+          });
+    });
+    function ShowMoreAboutUs(ele){
+        var count = $(ele).attr("data-visiable");
+        if(count == "0")
+        {
+            $(ele).attr("data-visiable","1");
+            $(ele).text("Show Less");
+            $(".about-box .desc p").addClass("active")  
+        }
+        else{
+            $(ele).attr("data-visiable", "0");
+            $(ele).text("Show More");
+            $(".about-box .desc p").removeClass("active")
+        }
+    }
+</script>
+
+
+
+
+    
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>*@

@@ -1,0 +1,56 @@
+﻿@model ProductDetailsModel
+@using Nop.Core.Domain.Seo;
+@using Nop.Core.Infrastructure;
+@using Nop.Web.Models.Catalog;
+
+<div style="width:100%;padding-top: 10px;">
+   
+    <p style="color:#666;font-size:20px;display:block;padding:6px;font-weight: 900;">Add To Estimate</p>
+    
+    @Html.DropDownListFor(model => model.EstimateId, Model.AvailableEstimateType, new { @class = "estiDDL" })
+</div>
+<style>
+    .estiDDL{
+        width:62%;
+    }
+    .estiDDL option:nth-child(2){
+        color: #0f7ab1;
+    }
+</style>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $("#EstimateId").change(function () {
+            var dropSelectedVal = $("#EstimateId").find(":selected").val();
+            
+            if (dropSelectedVal != "0") {
+                var productId=@Model.Id;
+                $.ajax({
+                    cache: false,
+                    url: '/Estimate/AddProductToEstimate?productId='+productId,
+                    data:$('#product-details-form').serialize(),
+                    type: 'post',
+                    success: function (data) {
+                        if (data.redirect) {
+                            location.href = data.redirect;
+                            return true;
+                        }
+                        if (data.message) {
+                            displayBarNotification(data.message, 'error', 0);
+                        }
+                        if (data.Savemessage) {
+                            displayBarNotification(data.Savemessage, 'success', 3500);
+                        }
+                    },
+                    complete: this.resetLoadWaiting,
+                    error: this.ajaxFailure
+                });
+            }
+        });
+    })
+    function AddProdToEstimate(urladd, formselector)
+    {
+        alert("url"+urladd);
+
+    }
+</script>

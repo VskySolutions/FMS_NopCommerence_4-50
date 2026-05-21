@@ -1,0 +1,16 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Authorize.Net",
+  "SupportedVersions": [
+    "4.50"
+  ],
+  "Author": "nopCommerce team",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.AuthorizeNet.dll",
+  "Description": "This plugin allows paying with Authorize.Net",
+  "LimitedToStores": [],
+  "LimitedToCustomerRoles": [],
+  "DependsOnSystemNames": [],
+  "SystemName": "Payments.AuthorizeNet",
+  "Version": "2.37"
+}

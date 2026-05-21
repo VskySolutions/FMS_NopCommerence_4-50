@@ -1,0 +1,254 @@
+﻿@model ProductModel
+@inject IStoreService storeService
+
+@using Nop.Core.Domain.Catalog;
+@using Nop.Services
+@using Nop.Services.Stores
+
+@{
+    var defaultGridPageSize = EngineContext.Current.Resolve<Nop.Core.Domain.Common.AdminAreaSettings>().DefaultGridPageSize;
+    var gridPageSizes = EngineContext.Current.Resolve<Nop.Core.Domain.Common.AdminAreaSettings>().GridPageSizes;
+
+    //page title
+    ViewBag.Title = T("Admin.Catalog.Products").Text;
+}
+
+<div class="card-body">
+    <div class="inputs" hidden >
+        <nop-editor asp-for="HideInstructionFilePath" />
+        <span asp-validation-for="HideInstructionFilePath"></span>
+    </div>
+    <div class="inputs" hidden >
+        <nop-editor asp-for="HideProdCate" />
+        <span asp-validation-for="HideProdCate"></span>
+    </div>
+
+    <div class="inputs">
+        <label>Add Installations File :</label>
+        <nop-editor asp-for="IsInstructionFileModel" />
+        <span asp-validation-for="IsInstructionFileModel"></span>
+    </div>
+    <hr />
+    <div class="inputs" id="HideCategoriesInstuction">
+        <label for="">Categories:</label>
+        @Html.DropDownListFor(model => model.ProdCateId, Model.AvailableCategoriesForInstallationIn, new { @class = "form-control input-sm" })
+    </div>
+
+    <div class="inputs" id="HideInstructionFile">
+        <label>Instruction File Name</label>  
+        <nop-editor asp-for="InstructionFileName" />
+        <span asp-validation-for="InstructionFileName"></span>
+    </div>
+
+    <div id="FileUploadHide">
+      <div class="inputs" >
+        <label for="">Upload File :</label>
+        <input type="file" id="fileupload" name="formFile" accept=".pdf" class="form-control" />
+     </div>
+      <div class="inputs">
+          <label for="">Open File :</label>
+          <div style="display:none;">
+              <nop-editor asp-for="InstructionFilePath" />
+           </div>
+              <a id="ShowLink" name="formFile" href="/ProductInsructionsFile/@Model.InstructionFilePath" target="_blank"><b>View</b></a>
+          </div>
+      </div>
+
+     @*<hr />*@
+    
+      <div class="inputs" id="DivCheckInstru">
+        <label>Select Installations File :</label>
+        <nop-editor asp-for="SelectInstallationFile" />
+        <span asp-validation-for="SelectInstallationFile"></span>
+     </div>
+
+     <div class="card card-default" id="Instructionlist">
+            <div class="card-body">
+            <nop-doc-reference asp-string-resource="@T("Admin.Documentation.Reference.Products", Docs.Products + Utm.OnAdmin)" />
+
+                @await Html.PartialAsync("Table", new DataTablesModel
+                {
+                Name = "products-grid",
+                UrlRead = new DataUrl("InstalledList", "Product", null),
+                SearchButtonId = "search-products",
+                Length = Model.ProductSearchModelList.PageSize,
+                LengthMenu = Model.ProductSearchModelList.AvailablePageSizes,
+                
+                Filters = new List<FilterParameter>
+                    {
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchProductName)),
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchCategoryId)),
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchIncludeSubCategories), typeof(bool)),
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchManufacturerId)),
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchStoreId)),
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchWarehouseId)),
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchVendorId)),
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchProductTypeId)),
+                        new FilterParameter(nameof(Model.ProductSearchModelList.SearchPublishedId))
+                    },
+                ColumnCollection = new List<ColumnProperty>
+                    {
+                        new ColumnProperty(nameof(ProductModel.Id))
+                        {
+                            IsMasterCheckBox = true,
+                            Render = new RenderCheckBox("checkbox_products"),
+                            ClassName =  NopColumnClassDefaults.CenterAll,
+                            Width = "50"
+                        },
+                        new ColumnProperty(nameof(ProductModel.PictureThumbnailUrl))
+                        {
+                            Title = T("Admin.Catalog.Products.Fields.PictureThumbnailUrl").Text,
+                            Width = "100",
+                            Render = new RenderPicture()
+                        },
+                        new ColumnProperty(nameof(ProductModel.Name))
+                        {
+                            Title = T("Admin.Catalog.Products.Fields.Name").Text,
+                             Width = "100"
+                        },
+                        new ColumnProperty(nameof(ProductModel.FileName))
+                        {
+                            Title = "FileName", 
+                            Width = "100"
+                        },
+                        new ColumnProperty(nameof(ProductModel.Category))
+                        {
+                            Title = "Category",
+                             Width = "100"
+                        },
+                        new ColumnProperty(nameof(ProductModel.FilePath))
+                        {
+                            Title = "Guid File",
+                            Width = "100",
+                            Render = new RenderCustom("DisplayPDF")
+                        },
+                        new ColumnProperty(nameof(ProductModel.CategoryId))
+                        {
+                            Visible=false,
+                        },
+                        new ColumnProperty(nameof(ProductModel.FilePath))
+                        {
+                            Title = "Edit",
+                            Width = "100",
+                            Render = new RenderCustom("SelectPDF")
+                        }
+                    }
+            })
+
+                <script>
+                    function DisplayPDF(data, type, row, meta) {
+                        return '<a href="/ProductInsructionsFile/'+row.FilePath+'" target="_blank"><b>View</b></a>';
+                    }
+                    function SelectPDF(data, type, row, meta) {
+                        return '<input type="button" onclick="showDetails(\''+row.Category+'\',\''+ row.FilePath +'\','+ row.CategoryId +')" value="Select" class="btn btn-default"/>';
+                    }
+                    function showDetails(Category,FilePath,CategoryId) {
+                        $("#ProdCateId option:contains(" + Category + ")").prop('selected', true);
+                        $("#HideInstructionFilePath").val(FilePath);
+                        $("#HideProdCate").val(CategoryId);
+                    }
+                </script>
+                <script>
+            function renderColumnPrice(data, type, row, meta) {
+                return (row.ProductTypeId != @((int)ProductType.GroupedProduct) ) ? data : null;
+            }
+
+            $(document).ready(function () {
+                $('#delete-selected-action-confirmation-submit-button').bind('click', function () {
+                    var postData = {
+                        selectedIds: selectedIds
+                    };
+                    addAntiForgeryToken(postData);
+                    $.ajax({
+                        cache: false,
+                        type: "POST",
+                        url: "@(Url.Action("DeleteSelected", "Product"))",
+                        data: postData,
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            showAlert('deleteSelectedFailed', errorThrown);
+                        },
+                        complete: function (jqXHR, textStatus) {
+                            if (jqXHR.status === 204)
+                            {
+                                showAlert('nothingSelectedAlert', '@T("Admin.Common.Alert.NothingSelected")');
+                                return;
+                            }
+                            updateTable('#products-grid');
+                        }
+                    });
+                    $('#delete-selected-action-confirmation').modal('toggle');
+                    return false;
+                });
+            });
+
+                </script>
+                <nop-alert asp-alert-id="deleteSelectedFailed" />
+                <nop-alert asp-alert-id="nothingSelectedAlert" />
+            </div>
+        </div>
+</div>
+
+<style>
+    Table
+    {
+        width:100% !important;
+    }
+    </style>
+<script type="text/javascript">
+
+     $('#Instructionlist').hide();
+     $(document).ready(function () {
+         toggleInstructionFileMapping();
+         $("#IsInstructionFileModel").click(function() 
+         {
+              toggleInstructionFileMapping();
+        });
+        
+        $("#SelectInstallationFile").click(function() 
+         {
+              toggleInstructionlistFileMapping();
+        });
+    });
+
+    function toggleInstructionlistFileMapping() {
+        checkBox = document.getElementById('SelectInstallationFile');
+        if(checkBox.checked)
+        {
+            $('#Instructionlist').show();
+            $('#FileUploadHide').hide();
+        }
+        else
+        {
+            $('#Instructionlist').hide();
+            $('#FileUploadHide').show();
+        }
+    }
+
+     function toggleInstructionFileMapping() {
+
+         // Get relevant element
+        checkBox = document.getElementById('IsInstructionFileModel');
+        // Check if the element is selected/checked
+        if(checkBox.checked) {
+
+             $('#FileUploadHide').show();
+            $('#HideInstructionFile').show();
+
+            $("#HideCategoriesInstuction").show();
+            $("#DivCheckInstru").show();
+
+            $("#UploadedFileLinkHide").show();
+         }
+         else
+         {
+             $("#InstructionFileName").val($("#Name").val());
+            $('#FileUploadHide').hide();
+            $('#HideInstructionFile').hide();
+            $("#UploadedFileLinkHide").hide();
+            $("#HideCategoriesInstuction").hide();
+            $("#DivCheckInstru").hide();
+            $("#Installation-grid").hide();
+         }
+    }
+</script>
+
