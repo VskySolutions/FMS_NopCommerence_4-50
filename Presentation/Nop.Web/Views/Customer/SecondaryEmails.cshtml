@@ -1,0 +1,286 @@
+﻿@using Nop.Core
+@model CustomerEmailModel
+@inject Nop.Core.IWebHelper webHelper
+@{
+    Layout = "_ColumnsTwo";
+
+    //title
+    NopHtml.AddTitleParts(T("PageTitle.Account").Text);
+    //page class
+    NopHtml.AppendPageCssClassParts("html-account-page");
+    NopHtml.AppendPageCssClassParts("html-customer-info-page");
+}
+
+@section left
+{
+    @await Component.InvokeAsync("CustomerNavigation", new { selectedTabId = CustomerNavigationEnum.SecondaryEmails, enctype = "multipart/form-data" })
+}
+<div class="page account-page customer-info-page">
+    <div class="page-title">
+        <h1>@T("Account.MyAccount") - @T("Secondary Emails")</h1>
+    </div>
+    <div class="page-body">
+        <form id="emailForm" asp-controller="Customer" asp-action="CreateAndEditCustmerEmail" method="post">
+            <input type="hidden" asp-for="Id" id="CustomerEmail_Id" />
+            <div class="fieldset">
+                <div class="title">
+                    <strong>@T("Add Secondary Emails")</strong>
+                </div>
+                <div class="form-fields">
+                    <div class="inputs">
+                        <label>Email:</label>
+                        <input asp-for="Email" id="emailInput" class="form-control text-box single-line" required /><nop-required />
+                        <input type="hidden" id="emailId" name="@Model.Id" />
+                        <div class="visible-lg visible-md visible-sm form-title-rquired"></div>
+                        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                    <div class="notification-section" style="margin-top:15px;">
+                        <div class="new-section-title">
+                            <label>Set Notification Flags:</label>
+                        </div>
+                        <div class="row mt-2 checkbox-color">
+                            <div class="col-md-5">
+                                <nop-editor asp-for="@Model.IsOrder" />
+                                <label for="orderFlag">Order Placement</label>
+                            </div>
+                            <div class="col-md-5">
+                                <nop-editor asp-for="@Model.IsOrderCancel" />
+                                <label for="invoiceFlag">Order Cancellation</label>
+                            </div>
+                            <div class="col-md-6">
+                                <nop-editor asp-for="@Model.IsEstimate" />
+                                <label for="estimateFlag">Estimate Added to Cart</label>
+                            </div>
+                            <div class="col-md-5">
+                                <nop-editor asp-for="@Model.IsRefund" />
+                                <label for="refundFlag">Order Refunded</label>
+                            </div>
+                            <div class="col-md-5">
+                                <nop-editor asp-for="@Model.IsOrderShipped" />
+                                <label for="refundFlag">Order Shipped</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons" style="margin-top: 10px !important;">
+                    <button type="submit" id="save-info-button" name="save-info-button" class="button-1 save-customer-info-button">@T("Common.Save")</button>
+                </div>
+
+                <table class="estimate-table" style="margin-left: 0px;margin-bottom: 0rem;">
+                    <thead style="background-color: #d3d3d352;">
+                        <tr role="row">
+                            <th>Sr. No.</th>
+                            <th>Email</th>
+                            <th>Created On</th>
+                            <th style="text-align: center;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.CustomerEmailList.Count() > 0)
+                        {
+                            var count = 1;
+                            @foreach (var item in Model.CustomerEmailList)
+                            {
+                                <tr>
+                                    <th style="font-weight: 500;">@count</th>
+                                    <th style="font-weight: 500;" id="email-text-@item.Id">@item.Email</th>
+                                    <th style="font-weight: 500;">@item.CreatedOnUtc</th>
+                                    <th style="text-align: center;">
+                                        <!-- Edit Button -->
+                                        <a href="@Url.RouteUrl("gocustomeremail", new { emailId = item.Id })" class="edit-email" data-id="@item.Id" data-email="@item.Email" data-toggle="tooltip" title="Edit Email">
+                                            <span style="color:#0a74f1;font:bold;" class="fas fa-edit"></span>
+                                        </a>
+                                        &nbsp;
+                                        <!-- Delete Button -->
+                                        <a href="#" class="delete-email" data-id="@item.CustomerId" data-emailid="@item.Id" data-email="@item.Email" data-toggle="tooltip" title="Delete Email">
+                                            <span style="color:#f10a0a;font:bold;" class="fas fa-trash-alt"></span>
+                                        </a>
+                                    </th>
+                                </tr>
+                                count++;
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="8">
+                                    <span style="color:#f10a0a;">No secondary emails are available.</span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '.delete-email', function () {
+            var button = $(this);
+            var customerId = button.attr("data-id");
+            var email = button.attr("data-email");
+            var emailId = button.attr("data-emailid");
+
+            //console.log("customerId = " + customerId + " email = " + email + " emailId = " + emailId);
+
+            var URL = "/Customer/DeleteCustomerEmail?customerId=" + customerId + "&emailId=" + emailId;
+
+            if (!confirm(`Are you sure you want to delete the email: ${email}?`)) {
+                return;
+            }
+
+            $.ajax({
+                url: URL,
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                dataType: "json",
+                //data: JSON.stringify({ customerId: customerId, emailId: emailId }),
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        button.closest('tr').remove();
+                        window.location.reload();
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while trying to delete the email.');
+                }
+            });
+        });
+    });
+</script>
+<style>
+    .checkbox-color {
+        color: #333;
+    }
+
+    .notification-section {
+        background: #f5f5f5;
+        border-left: 4px solid #007bff;
+        padding: 15px;
+        border-radius: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .new-section-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .custom-checkbox {
+        margin-right: 5px;
+    }
+
+    .update-btn {
+        background-color: #3c8dbc;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+
+</style>
+<style>
+    .page-title-new {
+        border-bottom: 2px solid #3266ae;
+        min-height: 50px;
+        margin: 0 0 20px;
+    }
+
+    .estimate-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: background-color 0.3s, transform 0.2s;
+        color: white;
+        padding: 10px 10px;
+        background-color: #467e9f;
+        border-radius: 5px;
+    }
+
+        .estimate-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.00);
+        }
+    /* Full-page container styles */
+    .estimate-full-page {
+        margin: 0 auto;
+        /* padding: 20px; */
+        max-width: 1200px;
+    }
+
+        .estimate-full-page .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+    /* Table styling */
+    .estimate-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+    }
+
+        .estimate-table th, .estimate-table td {
+            border: 1px solid #ddd;
+            padding: 8px 5px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .estimate-table thead {
+            background-color: #f4f4f4;
+        }
+
+        .estimate-table th {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .estimate-table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .estimate-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .estimate-table td a {
+            margin-right: 5px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+            .estimate-table td a:hover {
+                color: #0056b3;
+            }
+
+        .estimate-table td i {
+            font-size: 14px;
+        }
+
+        .estimate-table td {
+            word-break: break-word;
+            white-space: normal;
+        }
+
+    .add-email-btn {
+        background-color: #3c8dbc;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+</style>

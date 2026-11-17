@@ -1,0 +1,273 @@
+﻿@using Nop.Core.Domain.Seo
+@inject SeoSettings seoSettings
+
+@{
+    Layout = "_ColumnsOne";
+
+    //title
+    if (!string.IsNullOrEmpty(seoSettings.HomepageTitle))
+    {
+        NopHtml.AddTitleParts(seoSettings.HomepageTitle);
+    }
+
+    //meta
+    if (!string.IsNullOrEmpty(seoSettings.HomepageDescription))
+    {
+        NopHtml.AddMetaDescriptionParts(seoSettings.HomepageDescription);
+    }
+
+    //page class
+    NopHtml.AppendPageCssClassParts("html-home-page");
+}
+<style>
+    .master-column-wrapper .theme-custom .nivo-directionNav {
+        display: block !important;
+    }
+
+    .master-column-wrapper .theme-custom:hover .nivo-directionNav {
+        display: block !important;
+    }
+        
+</style>
+<div class="page home-page">
+    <div class="page-body">
+        <h3 style="text-align:center;color:red;">@ViewBag.TaxexamptFile</h3>
+        <div class="row" style="margin-top:24px ;margin-left:-10px; margin-right:-10px;">
+            <div class="col-md-18 col-sm-24 col-xs-24 pull-right">
+                @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageTop })
+                <div class="row">
+                    @await Component.InvokeAsync("NewsletterBox")
+                </div>
+                @*<div class="row" id="homepage-banners">
+                    <div class="col-sm-12">
+                        <div class="topic-block">
+                            <div class="why-choose">
+                                   <h2 class="section-title">Why Choose FMS </h2>
+                                   <div class="owl-carousel owl-theme home-service-carousel">
+                                        <div class="item">
+                                            <div class="scene quality-1">
+                                                <div class="display-side">
+                                                    <div class="cube_title">Professional Quality</div>
+                                                </div>
+                                                <div class="cube show-front">
+                                                    <div class="cube__face front"></div>
+                                                    <div class="cube__face right">
+                                                        <div class="description">
+                                                            <p>FMS has 30+ years of experience with police motor development for BMW as well as special project vehicles for foreign and domestic clients</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="scene quality-1">
+                                                <div class="display-side" style="background-image:url('/NewArrival/ezgif.com-webp-to-jpg (1).jpg')">
+                                                    <div class="cube_title">Turn-Key Solutions</div>
+                                                </div>
+                                                <div class="cube show-front">
+                                                    <div class="cube__face front"></div>
+                                                    <div class="cube__face right">
+                                                        <div class="description">
+                                                            <p>FMS provides plug & play solutions to your motor needs utilizing construction standards and methods rarely found with non-OEM suppliers</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="scene quality-1">
+                                                <div class="display-side">
+                                                    <div class="cube_title">Custom Solutions</div>
+                                                </div>
+                                                <div class="cube show-front">
+                                                    <div class="cube__face front"></div>
+                                                    <div class="cube__face right">
+                                                        <div class="description">
+                                                            <p>FMS provides custom solutions for any agency small or large. If you can explain it, we likely can build it</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="topic-block">
+                             <h2 class="section-title">NEWS</h2>
+                            <div class="owl-carousel owl-theme home-news-carousel">
+                                <div class="item">
+                                    <div class="news-items">
+                                        <div class="news-item new-items">
+                                            <div class="news-head">
+                                                <a class="news-title" href="/new-online-store-is-open">New online store is open</a>
+                                                <span class="news-date">-Thursday, November 3, 2022</span>
+                                            </div>
+                                            <div class="news-body">The new nopCommerce store is open now! We are very excited to offer our new range of products. We will be constantly adding to our range so please register on our site.</div>
+                                            <div class="buttons"><a href="/news" class="read-more">details</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="news-item new-items">
+                                        <div class="news-head">
+                                            <a class="news-title" href="/nopcommerce-new-release">nopCommerce new release!</a>
+                                            <span class="news-date">-Thursday, November 3, 2022</span>
+                                        </div>
+                                        <div class="news-body">nopCommerce includes everything you need to begin your e-commerce online store. We have thought of everything and it's all included! nopCommerce is a fully customizable shopping cart.</div>
+                                        <div class="buttons news-btn"><a href="/news" class="read-more">details</a></div>
+                                    </div>
+                                </div>
+                                 <div class="item">
+                                       <div class="news-item new-items">
+                                           <div class="news-head">
+                                               <a class="news-title" href="/about-nopcommerce">About nopCommerce</a>
+                                               <span class="news-date">-Thursday, November 3, 2022</span>
+                                           </div>
+                                           <div class="news-body">It's stable and highly usable. From downloads to documentation, www.nopcommerce.com offers a comprehensive base of information, resources, and support to the nopCommerce community.</div>
+                                            <div class="buttons news-btn"><a href="/news" class="read-more">details</a></div>
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>*@
+            </div>
+            <div class="col-md-6 col-sm-24 col-xs-24 pull-left">
+                <div id="homepage-side-info">
+                    <div class="topic-block">
+                        <div class="topic-block-body">
+                            @*<img src="/images/thumbs/New home page bmw with FMS bottle.jpeg" alt="" />*@
+                            <div class="home-free">
+                                <i class="fas fa-shipping-fast"></i>
+                                <h3 }">Free Shipping</h3>
+                                <p>Free domestic ground shipping on all US orders over $50.00.  International or 2-Day shipping available at extra cost.</p>
+                            </div>
+                            <div class="home-back">
+                                <i class="fas fa-money-check"></i>
+                                <h3>Warranty</h3>
+                                @*<p>14 days money back guarantee. Nunc volutpat nisl ac. See our FAQ or contact us.</p>*@
+                                <p>3-Year Limited Warranty on all FMS Products. See About FMS Accessories below for more details. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageBeforeNews })
+        @await Component.InvokeAsync("HomepageNews")
+
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageBeforeCategories })
+        @await Component.InvokeAsync("HomepageCategories")
+
+        @*@await Component.InvokeAsync("TopicBlock", new { systemName = "HomepageText" })*@
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageBeforeProducts })
+        @await Component.InvokeAsync("HomepageProducts")
+
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageBeforeBestSellers })
+        @await Component.InvokeAsync("HomepageBestSellers")
+
+
+
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageBeforePoll })
+        @await Component.InvokeAsync("HomepagePolls")
+        @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HomepageBottom })
+    </div>
+</div>
+<style>
+    /*
+    .home-service-carousel{
+        margin-bottom:0px;
+    }
+    .home-service-carousel .owl-nav{
+        position:relative;
+    }
+
+    .news-list-homepage .view-all{
+        display:none;
+    }
+    .owl-carousel, .news-list-homepage, .home-page-polls{
+margin: 0 0 0px;
+    }
+
+     .news-btn a{
+        padding: 10px;
+        width: 25%;
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        text-transform: capitalize;
+    }
+    .cube_title{
+        margin-top: 230px;
+    }
+
+    .new-items{
+        min-height:276px;
+    }*/
+</style>
+
+<script type="text/javascript" asp-location="Footer">
+    $(window).on('load', function () {
+        function handleOwlCarouselControl(element, show) {
+            if (show) {
+                $(element).find('.owl-controls').show();
+            }
+            else {
+                $(element).find('.owl-controls').hide();
+            }
+        }
+
+        //var owl0 = $(".home-page .owl-carousel");
+        //owl0.on('initialized.owl.carousel', function (event) {
+        //    handleOwlCarouselControl(event.target, event.page.count > 1);
+        //});
+        //owl0.on('resized.owl.carousel', function (event) {
+        //    handleOwlCarouselControl(event.target, event.page.count > 1);
+        //});
+        //owl0.owlCarousel({
+        //    responsive: {
+        //        0: {
+        //            items: 1
+        //        },
+        //        600: {
+        //            items: 2
+        //        },
+        //        900: {
+        //            items: 3
+        //        },
+        //        1000: {
+        //            items: 5
+        //        }
+        //    },
+        //    nav: true,
+        //});
+
+        $('.owl-carousel.home-service-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay:true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            },
+        })
+
+ 
+       $('.owl-carousel.home-news-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay:true,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            },
+        })
+    });
+</script>
+

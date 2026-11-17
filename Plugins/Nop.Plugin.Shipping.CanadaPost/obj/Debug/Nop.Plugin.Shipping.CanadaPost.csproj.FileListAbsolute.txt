@@ -1,0 +1,74 @@
+E:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\Configure.cshtml
+E:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+E:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+E:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+E:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+E:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+E:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+E:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csprojResolveAssemblyReference.cache
+E:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
+E:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb
+F:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\Configure.cshtml
+F:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+F:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+F:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+F:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+F:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+F:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+F:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csprojResolveAssemblyReference.cache
+F:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
+F:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb
+G:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\Configure.cshtml
+G:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+G:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+G:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+G:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+G:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+G:\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+G:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csprojResolveAssemblyReference.cache
+G:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
+G:\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb
+D:\TFS_VksyWeb\FMSNop\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\Configure.cshtml
+D:\TFS_VksyWeb\FMSNop\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+D:\TFS_VksyWeb\FMSNop\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+D:\TFS_VksyWeb\FMSNop\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+D:\TFS_VksyWeb\FMSNop\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+D:\TFS_VksyWeb\FMSNop\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+D:\TFS_VksyWeb\FMSNop\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+D:\TFS_VksyWeb\FMSNop\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csprojAssemblyReference.cache
+D:\TFS_VksyWeb\FMSNop\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csproj.CoreCompileInputs.cache
+D:\TFS_VksyWeb\FMSNop\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
+D:\TFS_VksyWeb\FMSNop\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb
+D:\FMS\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\Configure.cshtml
+D:\FMS\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+D:\FMS\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+D:\FMS\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+D:\FMS\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+D:\FMS\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+D:\FMS\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+D:\FMS\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csproj.AssemblyReference.cache
+D:\FMS\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csproj.CoreCompileInputs.cache
+D:\FMS\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
+D:\FMS\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\Configure.cshtml
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csproj.AssemblyReference.cache
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csproj.CoreCompileInputs.cache
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
+C:\Vaibhav\FMS Data\FMSNop\FMSNop\NOP 3.90\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Views\Configure.cshtml
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\web.config
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Description.txt
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\logo.jpg
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll.config
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.dll
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.CanadaPost\Nop.Plugin.Shipping.CanadaPost.pdb
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csproj.AssemblyReference.cache
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.csproj.CoreCompileInputs.cache
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.dll
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.CanadaPost\obj\Debug\Nop.Plugin.Shipping.CanadaPost.pdb

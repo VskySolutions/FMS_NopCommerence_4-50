@@ -1,0 +1,138 @@
+﻿@model EstimateDetailsModel
+@using Nop.Web.Models.Estimate;
+@* <div class="block block-account-navigation">
+    <div class="title">
+        <strong>My Estimate List</strong>
+    </div>
+    <div class="listbox">
+        <ul class="list">
+            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.AccountNavigationBefore, additionalData = Model })
+            @if (Model.NavBar.Count() > 0)
+            {
+                foreach (var item in Model.NavBar)
+                {
+                    <li class="customer-info EstimateList">
+                        <a href="@Url.RouteUrl("goestimate",new { Estimateid=item.ListId })">@(item.Name.Split(',')[0].ToString())</a>
+                        
+                    </li>
+                    <span style="font-size:13px;margin-left: 21px;color:#c7c1c1" >|_Created On : @item.Name.Split(',')[1].ToString()</span>
+                }
+            }
+            else
+            {
+                <li class="customer-info">
+                   No Estimate
+                </li>
+            }
+
+            @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.AccountNavigationBefore, additionalData = Model })
+        </ul>
+    </div>
+</div>
+<style>
+    
+    li.EstimateList
+    {
+        padding:0 15px !important;
+    }
+</style> *@
+
+<div class="estimate-full-page">
+    <div class="page-title">
+        <h1>My Estimate List</h1>
+    </div>
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.AccountNavigationBefore, additionalData = Model })
+
+    @if (Model.NavBar.Count() > 0)
+    {
+        <table class="estimate-table">
+            <thead>
+                <tr>
+                    <th>Estimate Id</th>
+                    <th>Estimate Name</th>
+                    <th>Created On</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.NavBar)
+                {
+                    <tr>
+                        <td>
+                            @item.ListId
+                        </td>
+                        <td>
+                            <a href="@Url.RouteUrl("goestimate", new { Estimateid = item.ListId })">
+                                @(item.Name.Split(',')[0].ToString())
+                            </a>
+                        </td>
+                        <td>
+                            @item.Name.Split(',')[1].ToString()
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No Estimate</p>
+    }
+</div>
+
+<style>
+    /* Full-page container styles */
+    .estimate-full-page {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 1200px;
+    }
+
+    .estimate-full-page .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Table styling */
+    .estimate-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    .estimate-table th,
+    .estimate-table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .estimate-table th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+        /* text-align: center; */
+    }
+
+    .estimate-table td a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    .estimate-table td a:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive design */
+    @@media (max-width: 768px) {
+        .estimate-table {
+            font-size: 14px;
+        }
+
+        .estimate-table th,
+        .estimate-table td {
+            padding: 8px;
+        }
+    }
+</style>
+
+

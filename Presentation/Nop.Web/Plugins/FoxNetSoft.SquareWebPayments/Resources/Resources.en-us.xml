@@ -1,0 +1,149 @@
+﻿<Language Name="English" IsRightToLeft="false">
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.showDebugInfo">
+    <Value>Enable Debugging</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.showDebugInfo.Hint">
+    <Value>Write debugging information into file. In ~/App_Data/ folder.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.SerialNumber">
+    <Value>Serial Number</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.SerialNumber.Hint">
+    <Value>Specify serial number.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.IsRegisted">
+    <Value>Registered version.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.IsNoRegisted">
+    <Value>Unregistered version is fully operational. There is only one limitation – only 100 payments.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.IsExpired">
+    <Value>Your license has expired, you should renew the license with a 50% discount.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.StoreUrl">
+    <Value>Website address (for registration)</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.StoreUrl.Hint">
+    <Value>Website address (for registration).</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.ClearLogFile">
+    <Value>Clear log-file</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.GetLogFile">
+    <Value>Download log-file</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.PersonalAccessToken">
+    <Value>Personal Access Token</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.PersonalAccessToken.Hint">
+    <Value>Specify Personal Access Token (Sandbox Access Token or Legacy Access Token).</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.ApplicationID">
+    <Value>Application ID</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.ApplicationID.Hint">
+    <Value>Specify Application ID.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.LocationId">
+    <Value>Location Id</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.LocationId.Hint">
+    <Value>Specify Location Id.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.LocationId.Description">
+    <Value>You need to set Location Id after adding "Access Token".</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.UseSandbox">
+    <Value>Use Sandbox</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.UseSandbox.Hint">
+    <Value>Check to enable Sandbox (testing environment).</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.SupportMultiCurrency">
+    <Value>Support multi-currency</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.SupportMultiCurrency.Hint">
+    <Value>By default plugin uses the primary currency of store, but you can enabled to use the customer's currency of the order.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.WebhookUrl">
+    <Value>Webhook Url</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.WebhookUrl.Hint">
+    <Value>Provide the Webhook URL.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.WebhookUrl.Description">
+    <Value>You can enable 'Webhook' and set Webhook URL.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.TransactMode">
+    <Value>Transaction mode</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.TransactMode.Hint">
+    <Value>Choose transaction mode.</Value>
+  </LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.EnableGooglePay">
+    <Value>Enable Google Pay</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.EnableGooglePay.Hint">
+    <Value>Enable Google Pay (Digital Wallet by Google).</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.EnableApplePay">
+    <Value>Enable Apple Pay</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.EnableApplePay.Hint">
+    <Value>Enable Apple Pay (Digital Wallet by Apple).</Value>
+  </LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.EnableAfterpay">
+		<Value>Enable Afterpay/Clearpay</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.EnableAfterpay.Hint">
+		<Value>Enable Afterpay/Clearpay.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.EnableACHBankTransfer">
+		<Value>Enable ACH Bank Transfer</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.EnableACHBankTransfer.Hint">
+		<Value>Enable ACH Bank Transfer.</Value>
+	</LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.AdditionalFee">
+    <Value>Additional fee</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.AdditionalFee.Hint">
+    <Value>Enter additional fee to charge your customers.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.SquareVersion">
+    <Value>Square API Version</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.SquareVersion.Hint">
+    <Value>Chose API Version in Square dashboard.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.AdditionalFeePercentage">
+    <Value>Additional fee. Use percentage</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.AdditionalFeePercentage.Hint">
+    <Value>Determines whether to apply a percentage additional fee to the order total. If not enabled, a fixed value is used.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.SquareWebPayments.PaymentMethodDescription">
+    <Value>Pay by credit/debit card (Square Payment Form)</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.SquareWebPayments.PaymentWasSent">
+    <Value>Payment was done.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.SquareWebPayments.Caption.Card">
+    <Value>Credit or debit card</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.SquareWebPayments.Caption.SubmitButton">
+    <Value>Submit Payment</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.SquareWebPayments.WrongSquareToken">
+    <Value>Wrong Square token</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.SquareWebPayments.Caption.Postal">
+    <Value>Postal</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.SquareWebPayments.Caption.Or">
+    <Value>Or</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.SquareWebPayments.DublicateLibrary">
+    <Value>Error. You has another plugin for Square with old Square.dll (1.0.0.0). Uninstall and remove it from the folder 'Plugins'. This plugin uses the new library Square.dll.</Value>
+  </LocaleResource>
+</Language>

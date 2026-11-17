@@ -1,0 +1,108 @@
+﻿@model TaxJarTransactionLogModel
+
+@{
+    Layout = "_AdminLayout";
+    ViewBag.PageTitle = T("Admin.NopStation.TaxJar.Log.Hint").Text;
+    NopHtml.SetActiveMenuItemSystemName("TaxJar.Configuration");
+}
+
+<form asp-controller="TaxTransactionLog" asp-action="View" method="post">
+    <div class="content-header clearfix">
+        <h1 class="float-left">
+            @T("Admin.NopStation.TaxJar.Log.Hint")
+            <small>
+                <i class="fa fa-arrow-circle-left"></i>
+                <a asp-action="Configure" asp-controller="TaxJar">@T("Admin.NopStation.TaxJar.Log.BackToList")</a>
+            </small>
+        </h1>
+        <div class="float-right">
+            <span id="log-delete" class="btn bg-red">
+                <i class="far fa-trash-alt"></i>
+                @T("Admin.Common.Delete")
+            </span>
+        </div>
+    </div>
+
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="form-horizontal">
+                <nop-panels id="avalara-panels">
+                    <div class="cards-group">
+                        <div class="card card-default">
+                            <div class="card-body">
+                                <div asp-validation-summary="All"></div>
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                        <nop-label asp-for="TransactionId" />
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="form-text-row">@Model.TransactionId</div>
+                                    </div>
+                                </div>
+                                @if (Model.OrderId > 0)
+                                {
+                                    <div class="form-group row">
+                                        <div class="col-md-3">
+                                            <nop-label asp-for="OrderId" />
+                                        </div>
+                                        <div class="col-md-9">
+                                            <a asp-controller="Order" asp-action="Edit" asp-route-id="@Model.OrderId">@Model.OrderId - @T("Admin.Common.View")</a>
+                                        </div>
+                                    </div>
+                                }
+                                @{
+                                    if (!string.IsNullOrEmpty(Model.TransactionReferanceId))
+                                    {
+                                        <div class="form-group row">
+                                            <div class="col-md-3">
+                                                <nop-label asp-for="TransactionReferanceId" />
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="form-text-row">@Model.TransactionReferanceId</div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                        <nop-label asp-for="TransactionType" />
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="form-text-row">@Model.TransactionType</div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                        <nop-label asp-for="Amount" />
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="form-text-row">@Model.Amount</div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                        <nop-label asp-for="CustomerId" />
+                                    </div>
+                                    <div class="col-md-9">
+                                        <a asp-controller="Customer" asp-action="Edit" asp-route-id="@Model.CustomerId">@(!string.IsNullOrEmpty(Model.CustomerEmail) ? Model.CustomerEmail : T("Admin.Customers.Guest").Text)</a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-3">
+                                        <nop-label asp-for="TransactionDate" />
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="form-text-row">@Model.TransactionDate</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nop-panels>
+            </div>
+        </div>
+    </section>
+</form>
+<nop-delete-confirmation asp-model-id="@Model.Id" asp-button-id="log-delete" />

@@ -1,0 +1,167 @@
+﻿@model EstimateDetailsModel
+@using Nop.Web.Models.Estimate;
+@using Nop.Core;
+
+@{
+    //Layout = "~/Views/Shared/_ColumnsTwo.cshtml";
+
+    //title
+    NopHtml.AddTitleParts("New Estimate");
+    //page class
+    NopHtml.AppendPageCssClassParts("html-account-page");
+    NopHtml.AppendPageCssClassParts("html-customer-info-page");
+}
+@* @section left
+{
+    @await Html.PartialAsync("~/Views/Estimate/EstimateNavigation.cshtml", Model)
+}  *@
+<div class="page account-page customer-info-page">
+    <div class="page-title">
+        @* <h1>New Estimate</h1> *@
+        <h1 style="display:inline-block;">New Estimate</h1>
+
+        <a href="@Url.RouteUrl("EstimateList")" style="float: right;margin-top:20px;" class="backlist-btn">
+            <i class="fa fa-angle-double-left"></i>Back to list
+        </a>
+        @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+        {
+            <a href="/Admin/Customer/Create" style="float: right;margin-top:20px;margin-right:12px;" class="export-pdf-btn">
+                <i class="fas fa-user-plus"></i>Add Customer
+            </a>
+        }
+    </div>
+    <div class="page-body">
+        <form asp-route="NewEstimate" asp-route-returnurl="EstimateList" method="post" autocomplete="off">
+            <div class="fieldset">
+                <div class="title">
+                    <strong>Add Estimate</strong>
+                </div>
+                <div class="form-fields">
+                    <div class="inputs ExtimateTxt">
+                        <label>Estimate Name:</label>
+                        <input asp-for="Name" maxlength="150" />
+                        <nop-required />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+                    {
+                        <div class="inputs ExtimateTxt">
+                            <label>Customer:</label>
+                            @Html.DropDownListFor(m => m.CreatedBy, Model.CustomerList, "--Please Select--", new { @class = "form-control select-list" })
+                        </div>
+                    }
+                    <div class="inputs ExtimateTxt">
+                        <label>Description:</label>
+                        @Html.TextAreaFor(m => m.Discription, new { @class = "form-control", maxlength = "500" })
+                    </div>
+
+                    <div class="buttons">
+                        <input type="submit" value="@T("Common.Save")" name="save-info-button" class="button-1 save-customer-info-button" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    .export-pdf-btn {
+        background-color: #2e7555;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+    .estimate-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: background-color 0.3s, transform 0.2s;
+        color: white;
+        background-color: #467e9f;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+
+        .estimate-btn:hover {
+            background-color: #0056b3; /* Darker shade of blue for hover effect */
+            transform: scale(1.00); /* Slight zoom on hover */
+        }
+
+    .btn {
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background .3s;
+    }
+
+    .backlist-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: background-color 0.3s, transform 0.2s;
+        color: white;
+        padding: 10px 10px;
+        background-color: grey;
+        border-radius: 5px;
+    }
+
+        .backlist-btn:hover {
+            background-color: #555555; /* Darker shade of blue for hover effect */
+            transform: scale(1.00); /* Slight zoom on hover */
+        }
+
+    .select-list {
+        width: 50%;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.getElementById('customerSearch');
+        const dropdown = document.getElementById('customerDropdown');
+        const hiddenInput = document.getElementById('selectedCustomerId');
+
+        // Show dropdown on input focus
+        searchInput.addEventListener('focus', function () {
+            dropdown.classList.add('show');
+        });
+
+        // Handle click outside
+        document.addEventListener('click', function (e) {
+            if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+
+        // Filter dropdown items
+        searchInput.addEventListener('input', function () {
+            const filter = this.value.toLowerCase();
+            const items = dropdown.getElementsByTagName('li');
+
+            for (const item of items) {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(filter) ? 'block' : 'none';
+            }
+
+            dropdown.classList.add('show');
+        });
+
+        // Handle item selection
+        dropdown.addEventListener('click', function (e) {
+            if (e.target.tagName === 'LI') {
+                searchInput.value = e.target.textContent;
+                hiddenInput.value = e.target.getAttribute('data-value');
+                dropdown.classList.remove('show');
+            }
+        });
+
+        // Prevent dropdown from closing when clicking inside
+        dropdown.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    });
+</script>
+

@@ -1,0 +1,86 @@
+﻿@model OrderModel
+
+@*<div class="content-header clearfix">
+    <h1 class="pull-left">
+       Video List
+    </h1>
+    <div class="pull-right">
+        <a href="@Url.Action("AddVideo","VideoGallary")" class="btn bg-blue">
+            <i class="fa fa-plus-square"></i>
+            @T("Admin.Common.AddNew")
+        </a>
+    </div>
+</div>*@
+            @*@Html.TextBoxFor(m => m.OrderId, new { @class = "form-control", type="hidden",id="BackOrderOrderId" })*@
+            
+            @await Html.PartialAsync("Table", new DataTablesModel
+            {
+                Name = "BackOrder-grid",
+                UrlRead = new DataUrl("BackOrderList", "Order",null),
+                SearchButtonId = "BackOrder-List",
+                Length = Model.PageSize,
+                LengthMenu = Model.AvailablePageSizes,
+                Filters = new List<FilterParameter>
+                {
+                    new FilterParameter(nameof(OrderModel.Id))
+                },
+                ColumnCollection = new List<ColumnProperty>
+                    {
+                    new ColumnProperty(nameof(OrderModel.Id))
+                    {
+                        IsMasterCheckBox = true,
+                        Render = new RenderCheckBox("checkbox_orders"),
+                        ClassName =  NopColumnClassDefaults.CenterAll,
+                        Width = "50"
+                    },
+                    new ColumnProperty(nameof(OrderItemModel.ProductName))
+                    {
+                        Title = "Product Name",
+                        Width = "100"
+                    },
+                    new ColumnProperty(nameof(OrderModel.ProductName))
+                    {
+                        Title = "Product Name",
+                        Width = "100"
+                    },
+                    new ColumnProperty(nameof(OrderModel.Quantity))
+                    {
+                        Title = "Total Quantity",
+                        Width = "50"
+                    },
+                    new ColumnProperty(nameof(OrderModel.BackOrderQty))
+                    {
+                        Title = "Back Order Quantity",
+                        Width = "50"
+                    },
+                    new ColumnProperty(nameof(OrderModel.Sku))
+                    {
+                        Title = "Sku",
+                        Width = "70"
+                    },
+                    new ColumnProperty(nameof(BackOrderModel.Id))
+                    {
+                        Title = "-",
+                        Width = "50",
+                        ClassName =  NopColumnClassDefaults.Button,
+                        Render = new RenderButtonEdit(new DataUrl("Edit"))
+                    }
+                    }
+            })
+
+
+<section class="content">
+    <div class="container-fluid">
+    <div class="form-horizontal">
+        <div class="cards-group">
+            <div class="card card-default">
+                <div class="card-body">
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+

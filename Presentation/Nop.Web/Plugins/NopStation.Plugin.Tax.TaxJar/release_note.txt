@@ -1,0 +1,8 @@
+﻿4.50.2.3: Fixed tax calculation based on tax settings
+4.50.1.1: 
+* Initial setting value updated
+* TaxjarTransactionLog table added and migration added for 4.50.1.1
+* Code added to delete the ref(s) dir and pdb files
+
+4.50.1.0: 
+* Update the plugin for 4.50

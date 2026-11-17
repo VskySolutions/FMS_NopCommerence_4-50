@@ -1,0 +1,12 @@
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Views\Configure.cshtml
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Description.txt
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\web.config
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\logo.jpg
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.dll.config
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.dll
+C:\TFS\FMS\Presentation\Nop.Web\Plugins\Shipping.AustraliaPost\Nop.Plugin.Shipping.AustraliaPost.pdb
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.csproj.App.config
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.csproj.AssemblyReference.cache
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.csproj.CoreCompileInputs.cache
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.dll
+C:\TFS\FMS\Plugins\Nop.Plugin.Shipping.AustraliaPost\obj\Release\Nop.Plugin.Shipping.AustraliaPost.pdb

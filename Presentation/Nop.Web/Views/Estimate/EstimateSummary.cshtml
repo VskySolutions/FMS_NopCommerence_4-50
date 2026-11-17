@@ -1,0 +1,409 @@
+﻿@model EstimateDetailsModel
+@using Nop.Core
+@using Nop.Core.Domain.Tax
+@using Nop.Core.Infrastructure
+@using Nop.Web.Models.Estimate;
+@{
+    var webHelper = EngineContext.Current.Resolve<IWebHelper>();
+}
+<div class="order-summary-content">
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.OrderSummaryContentBefore, additionalData = Model })
+
+    @if (Model.Items.Count > 0)
+    {
+        <form asp-route="Estimate" asp-route-returnurl="Estimate" id="Estimateitemform" method="post" autocomplete="off">
+            @Html.HiddenFor(x => x.EstimateId)
+            @await Html.PartialAsync("~/Views/Estimate/_EstimateList.cshtml", Model)
+        </form>
+    }
+    else
+    {
+        <div class="no-data">
+            Your Estimate List is empty!
+        </div>
+    }
+    @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.OrderSummaryContentAfter, additionalData = Model })
+</div>
+<script>
+    $(document).on('click', '#saveButton', function () {
+        var estimateId = $('#EstimateId').val();
+        var customerId = $('#CreatedBy').val();
+        var estimateName = $('#Name').val();
+        var discription = $('#Discription').val();
+        var noteField = $('#Note');
+        var note = noteField.length ? noteField.val() : "";
+
+        if ($("#Name").val().trim() === "") {
+            $("#estimateError").text("This field is required.").show();
+            return;
+        } else {
+            $("#estimateError").text(""); // Clear error message
+        }
+
+        //console.log("customerId = " + customerId + " estimateName = " + estimateName + " discription = " + discription + " estimateId = " + estimateId);
+
+        var URL = "/Estimate/EditEstimateDetails?CreatedBy=" + customerId + "&estimateName=" + encodeURIComponent(estimateName) + "&Discription=" + encodeURIComponent(discription) + "&estimateId=" + estimateId + "&note=" + encodeURIComponent(note);
+
+        $.ajax({
+            url: URL,
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json",
+            //data: JSON.stringify({ CreatedBy: customerId, estimateName: estimateName, Discription: discription, estimateId: estimateId }),
+            success: function (response) {
+                if (response.success) {
+                    alert("Estimate saved successfully!");
+                    window.location.reload();
+                } else {
+                    alert("Estimate some details are missing!");
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error(xhr.responseText);
+                alert("An error occurred.");
+            }
+        });
+    });
+
+    //Added by Yogesh kumbhar on Dt: 03-14-2025
+    $("#DeleteEstimateProductList").click(function (e) {
+        e.preventDefault(); // Prevent default behavior
+
+        var selectedItems = [];
+
+        $("input[name='removefromestimate']:checked").each(function () {
+            selectedItems.push(parseInt($(this).val())); // Convert values to integers
+        });
+
+        if (selectedItems.length === 0) {
+            alert("Please select at least one item to delete.");
+            return;
+        }
+
+        $.ajax({
+            url: "/Estimate/DeleteEstimateItems",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(selectedItems),
+            success: function (response) {
+                if (response.success) {
+                    alert(response.message);
+                    location.reload();
+                } else {
+                    alert(response.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("Error:", error);
+                alert("An error occurred while deleting items. Please try again.");
+            }
+        });
+    });
+
+
+</script>
+<script type="text/javascript">
+    $('#btnAddCopyEstimate').click(function () {
+        var obj = {};
+        obj.CopyEstimateId = @Model.EstimateId;
+        obj.Name = $("#CopyName").val();
+        obj.Description = $("#CopyDescriptions").val();
+
+        var EstimateId = @Model.EstimateId;
+        var Name = $("#CopyName").val();
+        var Description = $("#CopyDescriptions").val();
+
+        var URL = "/Estimate/CopyEstimate?EstimateId=" + EstimateId + "&Name=" + Name + "&Description=" + Description;
+
+        $.ajax({
+            type: 'post',
+            url: URL,
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json",
+            success: function (data) {
+                if (data.ErrorMsg) {
+                    displayBarNotification(data.ErrorMsg, 'error', 0);
+                }
+                else {
+                    $(".modal.Prod").hide();
+                    $("body").css("overflow", "visible");
+                    location.reload(true);
+                    displayBarNotification('Copied Estimate Successfully...', 'success', 3500);
+                }
+                if (data.redirect) {
+                    return true;
+                }
+            }
+        });
+    });
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".qty-estimate").change(function () {
+            var ProductQuantityArray = $('.Product-QuantityArray');
+            var qtyarray = [];
+            $(".qty-estimate").each(function (index, elem) {
+                var qty = $(elem).val();
+                qtyarray[index] = qty;
+            });
+            ProductQuantityArray.val(qtyarray);
+        });
+
+
+        $("#AddToCart").click(function (e) {
+            var FormSelector = $("#Estimate-details-form");
+            FormSelector.attr('Action', "/Estimate/AddItemsToCartFromEstimate");
+            FormSelector.submit();
+        });
+
+        $("#UpdateEstimateProductList").click(function (e) {
+            var FormSelector = $("#Estimate-details-form");
+            FormSelector.attr('Action', "/Estimate/UpdateEstimate");
+            FormSelector.submit();
+        });
+
+        $("#btnAddToCartMain").click(function (e) {
+            var FormSelector = $("#Estimate-details-form");
+            FormSelector.attr('Action', "/Estimate/UpdateEstimate");
+            FormSelector.submit();
+        });
+
+        // $("#DeleteEstimateProductList").click(function (e) {
+        //     var FormSelector = $("#Estimate-details-form");
+        //     FormSelector.attr('Action', "/Estimate/DeleteEstimateList");
+        //     FormSelector.submit();
+        // });
+
+        $("#exportxmlEstimateProductList").click(function (e) {
+            var FormSelector = $("#Estimate-details-form");
+            FormSelector.attr('Action', "/Estimate/ExportExcelAll");
+            FormSelector.submit();
+        });
+
+        $("#exportpdfEstimateProductList").click(function (e) {
+            var FormSelector = $("#Estimate-details-form");
+            FormSelector.attr('Action', "/Estimate/ExportToPDF");
+            FormSelector.submit();
+        });
+
+        var Copynm;
+        var Copydesc;
+
+        // $("#Name").attr("disabled", true);
+        // $("#Discription").attr("disabled", true);
+
+
+        $("#EditBtnMainList").click(function () {
+            $("#Name").css("background-color", "#FFF");
+            $("#Name").attr("disabled", false);
+            $("#Discription").attr("disabled", false);
+            $("#btnAddToCartMain").css("visibility", "visible");
+        });
+
+        $(".close").click(function () {
+            $(".modal.Prod").hide();
+            $("body").css("overflow", "visible");
+
+        })
+
+        $(".cancelNo").click(function () {
+            $(".modal.Prod").hide();
+            $("body").css("overflow", "visible");
+        })
+    })
+</script>
+<div class="modal Prod" id="CopyPop_@Model.EstimateId">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="#">All items add to new list !</h4>
+            </div>
+            <div class="modal-body">
+                <div class="inputs ExtimateTxt">
+                    <label>Estimate Name:</label>
+                    <input asp-for="CopyName" />
+                    <nop-required />
+                    <span asp-validation-for="CopyName"></span>
+                </div>
+                <div class="inputs ExtimateTxt">
+                    <label asp-for="CopyDescriptions" asp-postfix=":"></label>
+                    @Html.TextAreaFor(m => m.CopyDescriptions, new { @class = "form-control" })
+                    <span asp-validation-for="CopyDescriptions"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input type="button" id="btnAddCopyEstimate" class="btn btn-primary pull-right" value="Copy Estimate" />
+                <span class="btn btn-default pull-right margin-r-5 cancelNo" data-dismiss="modal">@T("Admin.Common.NoCancel")</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#LinkCopyEstimate").click(function () {
+            $("#CopyPop_" + @Model.EstimateId + "").show();
+            $("body").css("overflow", "hidden");
+        })
+    });
+</script>
+
+<style>
+    .modal-dialog {
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1050;
+        display: none;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+        outline: 0;
+    }
+
+    .modal-dialog {
+        position: relative;
+        width: 600px;
+        margin: auto;
+    }
+
+    @@Media (min-width: 768px) {
+        .modal-content {
+            -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        }
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fff;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #999;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 6px;
+        outline: 0;
+        -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+        box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    }
+
+    .modal-header {
+        padding: 15px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+        .modal-header .close {
+            margin-top: -2px;
+        }
+
+    button.close {
+        -webkit-appearance: none;
+        padding: 0;
+        cursor: pointer;
+        background: 0 0;
+        border: 0;
+    }
+
+    .close {
+        float: right;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        filter: alpha(opacity=20);
+        opacity: .2;
+    }
+
+    .modal-title {
+        margin: 0;
+        line-height: 1.42857143;
+    }
+
+    .modal {
+        background: rgba(0, 0, 0, 0.62);
+    }
+
+
+    .modal-body {
+        position: relative;
+        padding: 15px;
+    }
+
+    .modal-footer {
+        padding: 15px;
+        text-align: right;
+        border-top: 1px solid #e5e5e5;
+        overflow: auto;
+    }
+
+        .modal-footer .btn {
+            padding: 5px 15px;
+            line-height: 20px;
+        }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .btn-default:hover, .btn-default:active, .btn-default.hover {
+        background-color: #e7e7e7;
+    }
+
+    .margin-r-5 {
+        margin-right: 5px;
+    }
+
+    .btn-default {
+        background-color: #f4f4f4;
+        color: #444;
+        border-color: #ddd;
+    }
+
+    .btn {
+        border-radius: 3px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid transparent;
+    }
+
+        .btn:active {
+            -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+            -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+            box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+        }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .btn-primary {
+        background-color: #3c8dbc;
+        border-color: #367fa9;
+    }
+
+    .btn {
+        border-radius: 3px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid transparent;
+    }
+
+    .header, .header-upper, .header-lower {
+        z-index: 0;
+    }
+</style>

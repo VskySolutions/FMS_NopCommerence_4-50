@@ -1,0 +1,1220 @@
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\logo.png
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\plugin.json
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Views\Configure.cshtml
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Views\_ViewImports.cshtml
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.deps.json
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.pdb
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Antiforgery.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authorization.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Forms.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Server.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Web.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.CookiePolicy.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cors.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HostFiltering.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Connections.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Features.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Results.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpLogging.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpOverrides.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Identity.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Localization.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Localization.Routing.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Metadata.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Razor.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCaching.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCompression.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Rewrite.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Routing.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.IIS.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Session.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.StaticFiles.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.WebSockets.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.WebUtilities.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.CSharp.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Caching.Memory.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Binder.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Ini.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Json.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Xml.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.DependencyInjection.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Features.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Composite.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Hosting.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Http.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Identity.Core.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Identity.Stores.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Localization.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Configuration.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Console.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Debug.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.EventLog.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.EventSource.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.TraceSource.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.ObjectPool.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.WebEncoders.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.JSInterop.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Net.Http.Headers.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.VisualBasic.Core.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.VisualBasic.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Win32.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Win32.Registry.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\mscorlib.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\netstandard.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.AppContext.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Buffers.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Concurrent.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Immutable.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.NonGeneric.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Specialized.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.Annotations.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.DataAnnotations.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.EventBasedAsync.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.TypeConverter.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Configuration.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Console.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Core.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.Common.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.DataSetExtensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Contracts.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Debug.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.DiagnosticSource.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.EventLog.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.FileVersionInfo.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Process.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.StackTrace.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.TextWriterTraceListener.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Tools.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.TraceSource.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Tracing.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Drawing.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Drawing.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Dynamic.Runtime.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Formats.Asn1.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.Calendars.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.Extensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.Brotli.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.FileSystem.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.ZipFile.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.AccessControl.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.DriveInfo.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.Watcher.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.IsolatedStorage.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.MemoryMappedFiles.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipelines.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipes.AccessControl.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipes.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.UnmanagedMemoryStream.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Expressions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Parallel.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Queryable.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Memory.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Http.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Http.Json.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.HttpListener.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Mail.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.NameResolution.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.NetworkInformation.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Ping.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Requests.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Security.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.ServicePoint.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Sockets.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebClient.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebHeaderCollection.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebProxy.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebSockets.Client.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebSockets.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Numerics.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Numerics.Vectors.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ObjectModel.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.DispatchProxy.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.ILGeneration.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.Lightweight.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Extensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Metadata.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.TypeExtensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.Reader.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.ResourceManager.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.Writer.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.CompilerServices.Unsafe.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.CompilerServices.VisualC.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Extensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Handles.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.InteropServices.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Intrinsics.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Loader.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Numerics.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Formatters.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Json.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Xml.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.AccessControl.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Claims.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Algorithms.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Cng.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Csp.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Encoding.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.OpenSsl.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Primitives.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.X509Certificates.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Xml.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Principal.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Principal.Windows.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.SecureString.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ServiceModel.Web.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ServiceProcess.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.CodePages.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.Extensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encodings.Web.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Json.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.RegularExpressions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Channels.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Overlapped.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Dataflow.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Extensions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Parallel.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Thread.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.ThreadPool.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Timer.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Transactions.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Transactions.Local.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ValueTuple.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Web.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Web.HttpUtility.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Windows.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.Linq.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.ReaderWriter.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.Serialization.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XDocument.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XmlDocument.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XmlSerializer.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XPath.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XPath.XDocument.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\WindowsBase.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.AssemblyReference.cache
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.AssemblyInfoInputs.cache
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.AssemblyInfo.cs
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.CoreCompileInputs.cache
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.CopyComplete
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\refint\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.pdb
+C:\Vaibhav\NOP Com\nopCommerc\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\ref\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\logo.png
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\plugin.json
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Views\Configure.cshtml
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Views\_ViewImports.cshtml
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.deps.json
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.pdb
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Antiforgery.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Core.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authorization.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Authorization.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Forms.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Server.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Web.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.CookiePolicy.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cors.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HostFiltering.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Connections.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Extensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Features.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Results.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpLogging.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpOverrides.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Identity.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Localization.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Localization.Routing.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Metadata.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Core.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Razor.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCaching.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCompression.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Rewrite.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Routing.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.IIS.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Session.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Common.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Core.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.StaticFiles.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.WebSockets.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.WebUtilities.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.CSharp.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Caching.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Caching.Memory.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Binder.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Ini.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Json.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Xml.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.DependencyInjection.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Features.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Composite.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Physical.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Hosting.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Http.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Identity.Core.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Identity.Stores.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Localization.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Localization.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Abstractions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Configuration.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Console.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Debug.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.EventLog.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.EventSource.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.TraceSource.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.ObjectPool.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.WebEncoders.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.JSInterop.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Net.Http.Headers.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.VisualBasic.Core.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.VisualBasic.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Win32.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Win32.Registry.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\mscorlib.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\netstandard.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.AppContext.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Buffers.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Concurrent.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Immutable.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.NonGeneric.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Specialized.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.Annotations.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.DataAnnotations.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.EventBasedAsync.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.TypeConverter.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Configuration.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Console.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Core.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.Common.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.DataSetExtensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Contracts.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Debug.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.DiagnosticSource.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.EventLog.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.FileVersionInfo.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Process.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.StackTrace.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.TextWriterTraceListener.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Tools.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.TraceSource.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Tracing.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Drawing.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Drawing.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Dynamic.Runtime.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Formats.Asn1.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.Calendars.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.Extensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.Brotli.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.FileSystem.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.ZipFile.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.AccessControl.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.DriveInfo.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.Watcher.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.IsolatedStorage.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.MemoryMappedFiles.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipelines.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipes.AccessControl.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipes.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.UnmanagedMemoryStream.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Expressions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Parallel.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Queryable.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Memory.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Http.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Http.Json.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.HttpListener.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Mail.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.NameResolution.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.NetworkInformation.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Ping.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Requests.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Security.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.ServicePoint.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Sockets.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebClient.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebHeaderCollection.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebProxy.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebSockets.Client.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebSockets.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Numerics.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Numerics.Vectors.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ObjectModel.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.DispatchProxy.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.ILGeneration.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.Lightweight.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Extensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Metadata.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.TypeExtensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.Reader.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.ResourceManager.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.Writer.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.CompilerServices.Unsafe.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.CompilerServices.VisualC.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Extensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Handles.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.InteropServices.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Intrinsics.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Loader.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Numerics.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Formatters.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Json.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Xml.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.AccessControl.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Claims.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Algorithms.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Cng.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Csp.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Encoding.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.OpenSsl.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Primitives.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.X509Certificates.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Xml.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Principal.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Principal.Windows.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.SecureString.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ServiceModel.Web.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ServiceProcess.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.CodePages.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.Extensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encodings.Web.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Json.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.RegularExpressions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Channels.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Overlapped.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Dataflow.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Extensions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Parallel.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Thread.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.ThreadPool.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Timer.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Transactions.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Transactions.Local.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ValueTuple.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Web.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Web.HttpUtility.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Windows.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.Linq.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.ReaderWriter.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.Serialization.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XDocument.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XmlDocument.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XmlSerializer.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XPath.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XPath.XDocument.dll
+C:\TFS\FMS 4.50.2\src\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\WindowsBase.dll
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.AssemblyReference.cache
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.AssemblyInfoInputs.cache
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.AssemblyInfo.cs
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.CoreCompileInputs.cache
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.CopyComplete
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\refint\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.pdb
+C:\TFS\FMS 4.50.2\src\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\ref\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\logo.png
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\plugin.json
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Views\Configure.cshtml
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Views\_ViewImports.cshtml
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.deps.json
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.pdb
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Antiforgery.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Core.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authorization.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Authorization.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Forms.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Server.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Web.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.CookiePolicy.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cors.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HostFiltering.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Connections.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Extensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Features.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Results.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpLogging.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpOverrides.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Identity.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Localization.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Localization.Routing.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Metadata.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Core.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Razor.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCaching.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCompression.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Rewrite.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Routing.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.IIS.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Session.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Common.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Core.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.StaticFiles.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.WebSockets.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.WebUtilities.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.CSharp.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Caching.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Caching.Memory.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Binder.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Ini.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Json.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Xml.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.DependencyInjection.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Features.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Composite.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Physical.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Hosting.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Http.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Identity.Core.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Identity.Stores.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Localization.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Localization.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Abstractions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Configuration.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Console.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Debug.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.EventLog.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.EventSource.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.TraceSource.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.ObjectPool.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.WebEncoders.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.JSInterop.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Net.Http.Headers.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.VisualBasic.Core.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.VisualBasic.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Win32.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Win32.Registry.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\mscorlib.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\netstandard.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.AppContext.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Buffers.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Concurrent.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Immutable.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.NonGeneric.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Specialized.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.Annotations.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.DataAnnotations.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.EventBasedAsync.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.TypeConverter.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Configuration.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Console.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Core.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.Common.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.DataSetExtensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Contracts.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Debug.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.DiagnosticSource.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.EventLog.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.FileVersionInfo.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Process.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.StackTrace.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.TextWriterTraceListener.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Tools.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.TraceSource.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Tracing.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Drawing.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Drawing.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Dynamic.Runtime.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Formats.Asn1.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.Calendars.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.Extensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.Brotli.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.FileSystem.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.ZipFile.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.AccessControl.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.DriveInfo.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.Watcher.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.IsolatedStorage.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.MemoryMappedFiles.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipelines.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipes.AccessControl.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipes.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.UnmanagedMemoryStream.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Expressions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Parallel.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Queryable.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Memory.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Http.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Http.Json.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.HttpListener.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Mail.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.NameResolution.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.NetworkInformation.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Ping.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Requests.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Security.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.ServicePoint.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Sockets.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebClient.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebHeaderCollection.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebProxy.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebSockets.Client.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebSockets.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Numerics.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Numerics.Vectors.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ObjectModel.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.DispatchProxy.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.ILGeneration.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.Lightweight.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Extensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Metadata.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.TypeExtensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.Reader.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.ResourceManager.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.Writer.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.CompilerServices.Unsafe.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.CompilerServices.VisualC.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Extensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Handles.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.InteropServices.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Intrinsics.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Loader.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Numerics.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Formatters.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Json.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Xml.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.AccessControl.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Claims.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Algorithms.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Cng.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Csp.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Encoding.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.OpenSsl.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Primitives.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.X509Certificates.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Xml.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Principal.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Principal.Windows.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.SecureString.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ServiceModel.Web.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ServiceProcess.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.CodePages.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.Extensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encodings.Web.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Json.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.RegularExpressions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Channels.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Overlapped.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Dataflow.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Extensions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Parallel.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Thread.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.ThreadPool.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Timer.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Transactions.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Transactions.Local.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ValueTuple.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Web.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Web.HttpUtility.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Windows.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.Linq.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.ReaderWriter.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.Serialization.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XDocument.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XmlDocument.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XmlSerializer.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XPath.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XPath.XDocument.dll
+C:\TFS\FMS 4.50.2\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\WindowsBase.dll
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.AssemblyReference.cache
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.AssemblyInfoInputs.cache
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.AssemblyInfo.cs
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.CoreCompileInputs.cache
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.CopyComplete
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\refint\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.pdb
+C:\TFS\FMS 4.50.2\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\ref\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\logo.png
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\plugin.json
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Views\Configure.cshtml
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Views\_ViewImports.cshtml
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.deps.json
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\Nop.Plugin.Misc.WebApi.Frontend.pdb
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Antiforgery.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authentication.OAuth.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authorization.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Forms.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Server.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Components.Web.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.CookiePolicy.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cors.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HostFiltering.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Connections.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Features.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Http.Results.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpLogging.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpOverrides.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.HttpsPolicy.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Identity.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Localization.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Localization.Routing.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Metadata.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Cors.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Localization.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.Razor.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.RazorPages.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Razor.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Razor.Runtime.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCaching.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.ResponseCompression.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Rewrite.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Routing.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.HttpSys.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.IIS.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.IISIntegration.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.Session.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.StaticFiles.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.WebSockets.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.AspNetCore.WebUtilities.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.CSharp.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Caching.Memory.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Binder.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Ini.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Json.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.KeyPerFile.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Configuration.Xml.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.DependencyInjection.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Features.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Composite.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Hosting.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Http.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Identity.Core.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Identity.Stores.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Localization.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Configuration.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Console.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.Debug.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.EventLog.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.EventSource.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Logging.TraceSource.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.ObjectPool.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.DataAnnotations.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Options.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Extensions.WebEncoders.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.JSInterop.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Net.Http.Headers.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.VisualBasic.Core.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.VisualBasic.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Win32.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\Microsoft.Win32.Registry.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\mscorlib.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\netstandard.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.AppContext.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Buffers.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Concurrent.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Immutable.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.NonGeneric.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Collections.Specialized.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.Annotations.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.DataAnnotations.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.EventBasedAsync.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ComponentModel.TypeConverter.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Configuration.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Console.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Core.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.Common.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.DataSetExtensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Data.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Contracts.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Debug.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.DiagnosticSource.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.EventLog.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.FileVersionInfo.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Process.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.StackTrace.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.TextWriterTraceListener.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Tools.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.TraceSource.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Diagnostics.Tracing.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Drawing.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Drawing.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Dynamic.Runtime.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Formats.Asn1.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.Calendars.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Globalization.Extensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.Brotli.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.FileSystem.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Compression.ZipFile.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.AccessControl.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.DriveInfo.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.FileSystem.Watcher.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.IsolatedStorage.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.MemoryMappedFiles.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipelines.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipes.AccessControl.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.Pipes.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.IO.UnmanagedMemoryStream.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Expressions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Parallel.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Linq.Queryable.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Memory.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Http.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Http.Json.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.HttpListener.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Mail.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.NameResolution.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.NetworkInformation.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Ping.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Requests.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Security.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.ServicePoint.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.Sockets.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebClient.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebHeaderCollection.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebProxy.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebSockets.Client.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Net.WebSockets.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Numerics.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Numerics.Vectors.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ObjectModel.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.DispatchProxy.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.ILGeneration.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Emit.Lightweight.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Extensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Metadata.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Reflection.TypeExtensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.Reader.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.ResourceManager.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Resources.Writer.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.CompilerServices.Unsafe.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.CompilerServices.VisualC.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Extensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Handles.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.InteropServices.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Intrinsics.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Loader.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Numerics.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Formatters.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Json.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Runtime.Serialization.Xml.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.AccessControl.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Claims.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Algorithms.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Cng.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Csp.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Encoding.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.OpenSsl.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Primitives.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.X509Certificates.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Cryptography.Xml.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Principal.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.Principal.Windows.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Security.SecureString.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ServiceModel.Web.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ServiceProcess.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.CodePages.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encoding.Extensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Encodings.Web.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.Json.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Text.RegularExpressions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Channels.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Overlapped.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Dataflow.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Extensions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Tasks.Parallel.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Thread.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.ThreadPool.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Threading.Timer.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Transactions.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Transactions.Local.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.ValueTuple.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Web.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Web.HttpUtility.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Windows.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.Linq.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.ReaderWriter.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.Serialization.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XDocument.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XmlDocument.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XmlSerializer.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XPath.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\System.Xml.XPath.XDocument.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Presentation\Nop.Web\Plugins\Misc.WebApi.Frontend\refs\WindowsBase.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.AssemblyReference.cache
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.AssemblyInfoInputs.cache
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.AssemblyInfo.cs
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.csproj.CoreCompileInputs.cache
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plug.CA1FD89E.Up2Date
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\refint\Nop.Plugin.Misc.WebApi.Frontend.dll
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\Nop.Plugin.Misc.WebApi.Frontend.pdb
+C:\Yogesh\TFS_Server_Projects\FMS NOP 4.5\Plugins\Nop.Plugin.Misc.WebApi.Frontend\obj\Debug\net6.0\ref\Nop.Plugin.Misc.WebApi.Frontend.dll

@@ -1,0 +1,299 @@
+﻿@model EstimateDetailsModel
+@using Nop.Core
+@using Nop.Core.Domain.Tax
+@using Nop.Core.Infrastructure
+@using Nop.Web.Models.Estimate;
+<div class="page-title" style="margin-top:10px; margin-bottom:10px;padding-bottom: 10px;">
+    <div class="estimate-container">
+        <div class="inputnew">
+            <label asp-for="Name" asp-postfix=":"></label>
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", maxlength = "150" })
+            <span id="estimateError" style="color:red; display:none;"></span>
+        </div>
+        @* Added by Yogesh kumbhar on Dt: 12-30-2024 *@
+        @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+        {
+            <div class="inputnew">
+                <label>Customer:</label>
+                @Html.DropDownListFor(m => m.CreatedBy, Model.CustomerList, "--Please Select--", new { @class = "form-control select-list" })
+                <span id="estimatecustError" style="color:red; display:none;"></span>
+                @Html.HiddenFor(m => m.CreatedBy)
+            </div>
+        }
+
+        <div class="inputnew">
+            <label asp-for="Discription" asp-postfix=":"></label>
+            @Html.TextAreaFor(m => m.Discription, new { @class = "form-control textarea", maxlength = "500" })
+            <span asp-validation-for="Discription"></span>
+        </div>
+        @* Added by Yogesh kumbhar on Dt: 03-13-2025 *@
+        @if (!String.IsNullOrEmpty(Model.UserRole) && Model.UserRole.Equals("Admin"))
+        {
+            <div class="inputnew full-width">
+                <label asp-for="Note" asp-postfix=":"></label>
+                @Html.TextAreaFor(m => m.Note, new { @class = "form-control textarea", maxlength = "500" })
+                <span asp-validation-for="Note"></span>
+            </div>
+        }
+    </div>
+</div>
+<div class="row" style="margin-bottom: 10px; text-align: center;">
+    <a href="#" id="saveButton" class="update-btn" data-toggle="tooltip" title="Update estimate">
+        <i class="fa fa-check"></i> Update
+    </a>
+</div>
+
+<div class="table-wrapper">
+    <table class="cart">
+        <colgroup>
+            <col width="1" />
+            <col width="1" />
+            <col width="1" />
+            <col />
+            <col width="1" />
+            <col width="1" />
+            <col width="1" />
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="remove-from-cart" style="font-weight: 600;">
+                    @T("ShoppingCart.Remove")
+                </th>
+                <th class="sku" style="font-weight: 600;">
+                    @T("ShoppingCart.SKU")
+                </th>
+                <th class="product-picture" style="font-weight: 600;">
+                    @T("ShoppingCart.Image")
+                </th>
+                <th class="product" style="font-weight: 600;">
+                    @T("ShoppingCart.Product(s)")
+                </th>
+                <th class="unit-price" style="font-weight: 600;text-align:right;">
+                    @T("ShoppingCart.UnitPrice")
+                </th>
+                <th class="quantity" style="font-weight: 600;">
+                    @T("ShoppingCart.Quantity")
+                </th>
+                <th class="subtotal" style="font-weight: 600;text-align:right;">
+                    @T("ShoppingCart.ItemTotal")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                //Added by Yogesh Kumbhar on Dt: 12/02/2024
+                decimal grandTotal = 0;
+            }
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td class="remove-from-cart">
+                        @if (!Model.IsView)
+                        {
+                            <label class="td-title">@T("ShoppingCart.Remove"):</label>
+                            <input type="checkbox" name="removefromestimate" style="display:block" value="@(item.ListId)" />
+                        }
+                        else
+                        {
+                            <label class="td-title">@T("ShoppingCart.Remove"):</label>
+                            <input type="checkbox" name="removefromestimate" style="display:block" value="@(item.ListId)" disabled />
+                        }
+                    </td>
+                    <td class="sku">
+                        <label class="td-title">@T("ShoppingCart.SKU"):</label>
+                        <span class="sku-number">@item.Sku</span>
+                    </td>
+                    <td class="product-picture">
+                        <a href="@Url.RouteUrl("Product", new { SeName = item.ProductSeName })"><img alt="@item.Picture.AlternateText" src="@item.Picture.ImageUrl" title="@item.Picture.Title" /></a>
+                    </td>
+                    <td class="product">
+                        <a href="@Url.RouteUrl("Product", new { SeName = item.ProductSeName })" class="product-name">@item.Name</a>
+                        @if (!String.IsNullOrEmpty(item.AttributeDescription))
+                        {
+                            <div class="attributes">
+                                @Html.Raw(item.AttributeDescription)
+                            </div>
+                        }
+                    </td>
+                    <td class="unit-price" style="text-align:right;">
+                        <label class="td-title">@T("ShoppingCart.UnitPrice"):</label>
+                        <span class="product-unit-price">@item.UnitPrice</span>
+                    </td>
+                    <td class="quantity">
+                        @if (!Model.IsView)
+                        {
+                            <label class="td-title">@T("ShoppingCart.Quantity"):</label>
+                            <input name="itemquantityEstimate@(item.ListId)" type="text" value="@(item.Quantity)" est-id="@(item.ListId)" maxlength="5" class="qty-input qty-estimate" />
+
+                            <input name="EstimateStatusIdArray[]" type="text" value="@(item.ListId)" hidden />
+                            <input name="ProductQuantityArray" type="text" value="@(item.Quantity)" class="Product-QuantityArray" hidden />
+                        }
+                        else
+                        {
+                            <label class="td-title">@T("ShoppingCart.Quantity"):</label>
+                            <input name="itemquantityEstimate@(item.ListId)" type="text" value="@(item.Quantity)" est-id="@(item.ListId)" class="qty-input qty-estimate" readonly />
+
+                            <input name="EstimateStatusIdArray[]" type="text" value="@(item.ListId)" hidden />
+                            <input name="ProductQuantityArray" type="text" value="@(item.Quantity)" class="Product-QuantityArray" hidden />
+                        }
+                    </td>
+                    <td class="subtotal" style="text-align:right;">
+                        <label class="td-title">@T("ShoppingCart.ItemTotal"):</label>
+                        <span class="product-subtotal">@item.SubTotal</span>
+                    </td>
+                </tr>
+                //Added by Yogesh Kumbhar on Dt: 12/02/2024
+                if (decimal.TryParse(item.SubTotal.Replace("$", ""), out var itemSubTotal))
+                {
+                    grandTotal += itemSubTotal;
+                }
+
+            }
+            @* Added by Yogesh Kumbhar on Dt: 12/02/2024 *@
+            <tr>
+                <td colspan="6" class="text-right">
+                    <span style="font-size:16px;font-weight: bold;">Sub Total</span>
+                </td>
+                <td class="grand-total" style="text-align:right;">
+                    <span class="grand-total-value">$@grandTotal.ToString("N2")</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="cart-options">
+    <div class="common-buttons">
+        @if (!Model.IsView)
+        {
+            @if (Model.IsAddToCart)
+            {
+                <h4 style="text-align: right">Total Amount :@Model.Subtot.ToString()</h4>
+                <h3 style="color:#555555;text-align: right">This Estimate Is Already Added To Cart !!! </h3>
+                @* <input type="submit" name="addtoestimatecartbutton" id="AddToCart" style="background-color:#555555" class="button-2 wishlist-add-to-cart-button" value="@T("ShoppingCart.AddToCart")" /> *@
+                <a href="#" id="AddToCart" class="addcart-btn">
+                    <i class="fa fa-shopping-cart"></i> @T("ShoppingCart.AddToCart")
+                </a>
+            }
+            else
+            {
+                <h4 style="text-align: right">Total Amount :@Model.Subtot.ToString()</h4>
+                @* <input type="submit" name="addtoestimatecartbutton" id="AddToCart" style="background-color:#555555" class="button-2 wishlist-add-to-cart-button" value="@T("ShoppingCart.AddToCart")" /> *@
+                <a href="#" id="AddToCart" class="addcart-btn">
+                    <i class="fa fa-shopping-cart"></i> @T("ShoppingCart.AddToCart")
+                </a>
+            }
+            @* <input type="submit" name="updateestimate" id="UpdateEstimateProductList" value="Update Estimate items" />
+        <input type="submit" name="DeleteEstimateList" id="DeleteEstimateProductList" value="Delete Estimate List" class="button-2 continue-shopping-button" />
+        <input type="submit" name="exportxml" id="exportxmlEstimateProductList" value="Export to Excel" class="button-2 wishlist-add-to-cart-button" />
+        <input type="submit" name="exportxml" id="exportpdfEstimateProductList" value="Export to PDF" class="button-2 wishlist-add-to-cart-button" /> *@
+
+            <a href="#" id="UpdateEstimateProductList" class="update-btn">
+                <i class="far fa-check-circle"></i> Update Estimate Items
+            </a>
+            <a href="#" id="DeleteEstimateProductList" class="delete-btn">
+                <i class="fa fa-trash"></i> Delete Estimate List
+            </a>
+            <a href="#" id="exportxmlEstimateProductList" class="export-excel-btn">
+                <i class="fa fa-file-excel"></i> Export to Excel
+            </a>
+            <a href="#" id="exportpdfEstimateProductList" class="export-pdf-btn">
+                <i class="fa fa-file-pdf"></i> Export to PDF
+            </a>
+        }
+    </div>
+</div>
+<style>
+    select {
+        height: 36px;
+    }
+
+    .textarea {
+        min-height: 70px;
+    }
+
+    .inputnew {
+        position: relative;
+        /* margin: 0 0 15px; */
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .inputnew label {
+            display: block;
+            width: 100%;
+            /* margin: 0 0 10px; */
+            font-size: 15px;
+            color: #444;
+            font-weight: bold;
+        }
+
+    .addcart-btn {
+        background-color: #605ca8;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .update-btn {
+        background-color: #3c8dbc;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .delete-btn {
+        background-color: #dd4b39;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .export-excel-btn {
+        background-color: #28a745;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .export-pdf-btn {
+        background-color: #2e7555;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 10px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .select-list {
+        width: 450px;
+    }
+
+    .estimate-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+        margin-top: 10px;
+    }
+
+    .full-width {
+        grid-column: span 3;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+</style>
+
+

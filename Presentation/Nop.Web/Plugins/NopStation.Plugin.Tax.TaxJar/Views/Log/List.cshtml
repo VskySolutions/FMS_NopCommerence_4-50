@@ -1,0 +1,127 @@
+﻿@model ConfigurationModel
+
+<div class="card-body">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <nop-label asp-for="@Model.TaxJarTransactionLogSearchModel.CreatedFrom" />
+                </div>
+                <div class="col-md-8">
+                    <nop-editor asp-for="@Model.TaxJarTransactionLogSearchModel.CreatedFrom" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <nop-label asp-for="@Model.TaxJarTransactionLogSearchModel.CreatedTo" />
+                </div>
+                <div class="col-md-8">
+                    <nop-editor asp-for="@Model.TaxJarTransactionLogSearchModel.CreatedTo" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="text-center col-12 mt-3">
+            <button type="button" id="search-log" class="btn btn-primary btn-search" style="margin:0px">
+                <i class="fa fa-search"></i>
+                @T("Admin.Common.Search")
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="card-body">
+    @await Html.PartialAsync("Table", new DataTablesModel
+    {
+       Name = "log-grid",
+       UrlRead = new DataUrl("LogList", "TaxJarTransactionLog", null),
+       SearchButtonId = "search-log",
+       Length = Model.TaxJarTransactionLogSearchModel.PageSize,
+       LengthMenu = Model.TaxJarTransactionLogSearchModel.AvailablePageSizes,
+       Filters = new List<FilterParameter>
+        {
+            new FilterParameter(nameof(Model.TaxJarTransactionLogSearchModel.CreatedFrom), nameof(Model.TaxJarTransactionLogSearchModel)),
+            new FilterParameter(nameof(Model.TaxJarTransactionLogSearchModel.CreatedTo), nameof(Model.TaxJarTransactionLogSearchModel))
+        },
+       ColumnCollection = new List<ColumnProperty>
+        {
+            new ColumnProperty(nameof(TaxJarTransactionLogModel.Id))
+            {
+                IsMasterCheckBox = true,
+                Render = new RenderCheckBox("checkbox_log"),
+                ClassName =  NopColumnClassDefaults.CenterAll,
+                Width = "50",
+            },
+            new ColumnProperty(nameof(TaxJarTransactionLogModel.TransactionId))
+            {
+                Title = T("Admin.NopStation.TaxJar.Log.TransactionId").Text,
+                Width = "100"
+            },
+            new ColumnProperty(nameof(TaxJarTransactionLogModel.TransactionType))
+            {
+                Title = T("Admin.NopStation.TaxJar.Log.TransactionType").Text,
+                Width = "200"
+            },
+            new ColumnProperty(nameof(TaxJarTransactionLogModel.TransactionDate))
+            {
+                Title = T("Admin.NopStation.TaxJar.Log.TransactionDate").Text,
+                Width = "200",
+                Render = new RenderDate()
+            },
+            new ColumnProperty(nameof(TaxJarTransactionLogModel.OrderId))
+            {
+                Title = T("Admin.NopStation.TaxJar.Log.Order").Text,
+                Width = "200",
+                Render = new RenderLink(new DataUrl("~/Admin/Order/Edit", nameof(TaxJarTransactionLogModel.OrderId)))
+            },
+            new ColumnProperty(nameof(TaxJarTransactionLogModel.Id))
+            {
+                Title = T("Admin.Common.View").Text,
+                Width = "100",
+                ClassName = NopColumnClassDefaults.Button,
+                Render = new RenderButtonView(new DataUrl("~/Admin/TaxJarTransactionLog/View/"))
+            }
+        }
+    })
+
+    <script>
+        $(document).ready(function() {
+            //"delete selected" button
+            $("#delete-selected-action-confirmation-submit-button").bind("click", function () {
+                var postData = {
+                    selectedIds: selectedIds
+                };
+                addAntiForgeryToken(postData);
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    url: "@(Url.Action("DeleteSelected", "TaxJarTransactionLog"))",
+                    data: postData,
+                    traditional: true,
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $('#deleteSelectedFailed-info').text(errorThrown);
+                        $("#deleteSelectedFailed").click();
+                    },
+                    complete: function (jqXHR, textStatus) {
+                        updateTable('#log-grid');
+                    }
+                });
+                $('#delete-selected-action-confirmation').modal('toggle');
+                return false;
+            });
+        });
+    </script>
+</div>
+<div class="card-footer">
+    <button type="button" id="delete-selected" class="btn bg-red">
+        <i class="fa fa-trash-o"></i>
+        @T("Admin.System.Log.DeleteSelected")
+    </button>
+    <nop-action-confirmation asp-button-id="delete-selected" />
+</div>
+<nop-alert asp-alert-id="deleteSelectedFailed" />

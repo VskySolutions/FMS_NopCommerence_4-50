@@ -1,0 +1,30 @@
+﻿@using Nop.Core
+@using Nop.Services.Helpers
+@using Nop.Web.Framework.UI
+@inject IWorkContext workContext
+@inject IThemeContext themeContext
+@inject IUserAgentHelper userAgentHelper
+@inject Nop.Services.Localization.ILanguageService languageService
+@{
+    Layout = "";
+    var themeName = await themeContext.GetWorkingThemeNameAsync();
+    var supportRtl = await Html.ShouldUseRtlThemeAsync();
+
+    NopHtml.AppendCssFileParts($"~/Themes/{themeName}/Content/css/color.css");
+
+    //<link href="//fonts.googleapis.com/css?family=Poppins:400,500,600|Quattrocento+Sans:400,700" rel="stylesheet"></link>
+    <link href="~/Themes/@themeName/Content/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
+    NopHtml.AppendCssFileParts($"~/Themes/{themeName}/Content/css/styles{(supportRtl ? ".rtl" : "")}.css");
+
+    //bootstrap and slider CSS file - Pro nopCommerce
+    NopHtml.AppendCssFileParts($"~/Themes/{themeName}/Content/css/owl.carousel.css");
+    NopHtml.AppendCssFileParts($"~/Themes/{themeName}/Content/css/bootstrap.css");
+
+    //add jQuery UI css file
+    NopHtml.AppendCssFileParts("~/lib_npm/jquery-ui-dist/jquery-ui.min.css");
+
+    NopHtml.AddScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/bootstrap.min.js");
+    NopHtml.AddScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/owl.carousel.min.js");
+    NopHtml.AddScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/jquery.bpopup.min.js");
+    NopHtml.AddScriptParts(ResourceLocation.Footer, $"~/Themes/{themeName}/Content/js/jquery.dotdotdot.js");
+}

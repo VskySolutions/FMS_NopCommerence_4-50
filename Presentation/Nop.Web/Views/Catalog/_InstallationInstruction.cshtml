@@ -1,0 +1,22 @@
+﻿@model CategoryModel
+@using Nop.Core.Domain.Common;
+@using Nop.Core.Domain.Seo;
+@using Nop.Core.Infrastructure;
+@using Nop.Web.Models.Catalog
+<div class="row">
+
+    @foreach (var item in Model.InstallationInstructionFiles)
+    {
+        <div class="col-md-3">
+            <div class="intru-box">
+                <div class="img-box">
+                    <img src="@item.ProductImagePath" />
+                </div>
+                <div class="desc">
+                    <p>@item.InstructonFileName</p>
+                    <a href="/ProductInsructionsFile/@item.InstructionFilePath" target="_blank">View</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
